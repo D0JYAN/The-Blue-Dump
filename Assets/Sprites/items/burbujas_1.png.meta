@@ -107,10 +107,10 @@ TextureImporter:
       name: burbujas_2_0
       rect:
         serializedVersion: 2
-        x: 334
+        x: 201
         y: 0
-        width: 409
-        height: 369
+        width: 632
+        height: 986
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: burbujas_2_1
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1218
         y: 0
-        width: 439
-        height: 373
+        width: 632
+        height: 986
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: burbujas_2_2
       rect:
         serializedVersion: 2
-        x: 2353
-        y: 2
-        width: 413
-        height: 506
+        x: 2248
+        y: 0
+        width: 632
+        height: 986
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: burbujas_2_3
       rect:
         serializedVersion: 2
-        x: 3276
+        x: 3268
         y: 0
         width: 632
-        height: 717
+        height: 986
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,7 +191,7 @@ TextureImporter:
       name: burbujas_2_4
       rect:
         serializedVersion: 2
-        x: 4329
+        x: 4294
         y: 0
         width: 632
         height: 986
