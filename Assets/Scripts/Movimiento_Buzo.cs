@@ -5,12 +5,10 @@ using UnityEngine;
 public class Movimiento_Buzo : MonoBehaviour
 {
     //Variable globales.
-    public float JumpForce;
-    public float DescendForce;
     public float Speed;
 
     private Rigidbody2D Rigidbody2D;
-    private float Horizontal;
+    private Vector2 moveInput;
 
     // Start is called before the first frame update
     void Start()
@@ -22,40 +20,20 @@ public class Movimiento_Buzo : MonoBehaviour
     void Update()
     {
         //Capturar el input del juagdor.
-        Horizontal = Input.GetAxisRaw("Horizontal");//Si pulsa la A = -1, si pulsa la D = 1 y si no pulsa nada = 0.
+        float moveX = Input.GetAxisRaw("Horizontal");//Si pulsa la A = -1, si pulsa la D = 1 y si no pulsa nada = 0.
+        float moveY = Input.GetAxisRaw("Vertical");//Si pulsa la S = -1, si pulsa la W = 1 y si no pulsa nada = 0.
+        moveInput = new Vector2(moveX, moveY);
 
         //Girar al personaje.
-        if (Horizontal < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
-        else if (Horizontal > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        if (moveX < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else if (moveX > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
-        //Salto del jugador.
-        if (Input.GetKeyDown(KeyCode.W) | Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            Jump();
-        }
-        else//El personaje puede decender.
-            if (Input.GetKeyDown(KeyCode.S) | Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Descend();
-        }
-    }
-
-    //Invoca al metodo Jump para que el personaje Salte, en este caso suba.
-    private void Jump()
-    {
-        Rigidbody2D.AddForce(Vector2.up * JumpForce);
-    }
-    //Invoca al metodo Descend para que el personaje descienda.
-    private void Descend()
-    {
-        Rigidbody2D.AddForce(Vector2.down * DescendForce);
     }
 
     //Mover objetos en funcion de la velocidad.
     private void FixedUpdate()
     {
-        Rigidbody2D.velocity = new Vector2(Horizontal * Speed, Rigidbody2D.velocity.y);
+        Rigidbody2D.MovePosition(Rigidbody2D.position + moveInput * Speed * Time.fixedDeltaTime);
     }
-
 
 }
