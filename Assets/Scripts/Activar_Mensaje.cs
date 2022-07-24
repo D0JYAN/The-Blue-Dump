@@ -15,10 +15,13 @@ public class Activar_Mensaje : MonoBehaviour
         Color Color_Mensaje_1 = spr.material.color;
         Color_Mensaje_1.a = 0.0f;
         spr.material.color = Color_Mensaje_1;
-        StartCoroutine("FadeIn");
     }
 
     //Este condicional sirven para detectar cuando el Player colisiona con el trigger que creamos
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        StartCoroutine("FadeIn");
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
