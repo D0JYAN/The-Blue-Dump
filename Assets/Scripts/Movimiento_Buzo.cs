@@ -36,4 +36,26 @@ public class Movimiento_Buzo : MonoBehaviour
         Rigidbody2D.MovePosition(Rigidbody2D.position + moveInput * Speed * Time.fixedDeltaTime);
     }
 
+    //Vida del personaje
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Burbujas_Contaminadas")
+        {
+            Debug.Log("Quita salud");
+            PierdeVida();
+        }
+    }
+
+    private void PierdeVida()
+    {
+        Debug.Log("Pierde Vida");
+        Reaparecer();
+    }
+
+    private void Reaparecer()
+    {
+        Rigidbody2D.velocity = Vector3.zero;
+        transform.position = moveInput;
+    }
+
 }
