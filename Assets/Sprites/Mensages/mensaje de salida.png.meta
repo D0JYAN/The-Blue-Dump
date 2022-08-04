@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: 1e1d9fc98b63b544daf24a86fa5c796f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mensaje de salida_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875f6d867e7bc334fa644ecb17597e3c
+      internalID: 610158429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_1
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325cb9ba64a144f4a9125839a685adcc
+      internalID: 1001212609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_2
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04628b57ae4613b42840e486502cd194
+      internalID: 2077884325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_3
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659911d8657de5845a2c85711a7f5753
+      internalID: -713085112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_4
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8eaa87ee9d5c54db165836b9fcaab1
+      internalID: -1217485310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_5
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aaf7dde60d2a1a47b004e58a14688c3
+      internalID: -1928728733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_6
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 13200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62499a56776290947993abb6a8ac7c3f
+      internalID: -1553990880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8dcd8ae3211694ea64738db46709a4
+      internalID: -1970826139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_8
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb44fa564702d564e81a3c864b95a161
+      internalID: -614769238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_9
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189ede678bbdf24488ab69fdcea36233
+      internalID: 1247182473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_10
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639e53f05fc9e8748bb96bae6f57764c
+      internalID: -88812547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_11
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6208d05ea0ffac249aea0d7f475f4b6a
+      internalID: -478064659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_12
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf3c642c9a36c04b863fbb26f4ddea5
+      internalID: -719394529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_13
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0322417a6f134ed4aba5d35b75ae3417
+      internalID: 650817459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6531cdd04a9f2974697f27e59349bedf
+      internalID: -53716243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_15
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38abf0f4f1b30f147b033faefcb38bbf
+      internalID: 1190398956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_16
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a52b9fa478ed9b428dc5015679029a4
+      internalID: 1134311628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_17
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787630a4e44a8de4189c8d139c35d102
+      internalID: -2125507047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_18
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a988259cf0c6c342bc819ccbdef004c
+      internalID: -748454094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_19
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dff6b897e5f8b942939595f6e65edba
+      internalID: -324433191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_20
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e28a5ba09870254b93981b88b79f845
+      internalID: 423950109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f1cd40eacec874884d5e7091ccdb2f
+      internalID: -1020605358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_22
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a4698414b770b46acddcb98878e3c2
+      internalID: 1742373185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_23
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 594614634f208a94fbcae145d5c47678
+      internalID: -1844017829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_24
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a0f446f9ec2f442a9a2c1c7c19eadd
+      internalID: -1361397457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_25
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff438435226f1a478b902ed2becf908
+      internalID: -1008959231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_26
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2879a772fb93b34d8af0e2e00620c88
+      internalID: -2090859713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_27
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc113c9b0609ce044a763601de3e0419
+      internalID: -525412763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cd015989c909d4faff8c1d339f60d6
+      internalID: -1747639212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_29
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96bd38b89da37b4d99e4b2ca289cdaa
+      internalID: 1877577024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_30
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d2f4f1508554346b5db56300769a63
+      internalID: 839165668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_31
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c7133046c212a429f57b3f7cc4b155
+      internalID: 699668781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_32
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7282391dda4ce314f8d4f70ea409e0aa
+      internalID: 703323095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_33
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557feb47868284946a017297eb8fba15
+      internalID: -1098536103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_34
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c66bf2256faf5f4ba4de296240a7bfa
+      internalID: 1732245888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f7d2ab87ba3c34fa038e38fe23c7be
+      internalID: 347823333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_36
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1360057e3598842abc2b2deb58b155
+      internalID: 307563094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_37
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95526337b125be499aaec4fcaf80cac
+      internalID: -703985359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_38
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b880af291720ab4cbb344d6959f71fa
+      internalID: 1070099689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_39
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4967208fafc2dc4380d4584c4ddf009
+      internalID: 1462196299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_40
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bd5b35585310248bcc8813a5161280
+      internalID: 1703280896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_41
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1aa9dd597538348a048a3668af1e23
+      internalID: -46371907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mensaje de salida_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c40fb7d3d498ad4895408d4251a6e80
+      internalID: -857337566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mensaje de salida_19: -324433191
+      mensaje de salida_12: -719394529
+      mensaje de salida_3: -713085112
+      mensaje de salida_20: 423950109
+      mensaje de salida_9: 1247182473
+      mensaje de salida_24: -1361397457
+      mensaje de salida_30: 839165668
+      mensaje de salida_36: 307563094
+      mensaje de salida_1: 1001212609
+      mensaje de salida_25: -1008959231
+      mensaje de salida_21: -1020605358
+      mensaje de salida_22: 1742373185
+      mensaje de salida_31: 699668781
+      mensaje de salida_0: 610158429
+      mensaje de salida_37: -703985359
+      mensaje de salida_28: -1747639212
+      mensaje de salida_40: 1703280896
+      mensaje de salida_34: 1732245888
+      mensaje de salida_42: -857337566
+      mensaje de salida_23: -1844017829
+      mensaje de salida_33: -1098536103
+      mensaje de salida_16: 1134311628
+      mensaje de salida_29: 1877577024
+      mensaje de salida_4: -1217485310
+      mensaje de salida_41: -46371907
+      mensaje de salida_17: -2125507047
+      mensaje de salida_2: 2077884325
+      mensaje de salida_32: 703323095
+      mensaje de salida_6: -1553990880
+      mensaje de salida_38: 1070099689
+      mensaje de salida_18: -748454094
+      mensaje de salida_11: -478064659
+      mensaje de salida_15: 1190398956
+      mensaje de salida_5: -1928728733
+      mensaje de salida_39: 1462196299
+      mensaje de salida_13: 650817459
+      mensaje de salida_14: -53716243
+      mensaje de salida_10: -88812547
+      mensaje de salida_35: 347823333
+      mensaje de salida_27: -525412763
+      mensaje de salida_8: -614769238
+      mensaje de salida_7: -1970826139
+      mensaje de salida_26: -2090859713
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
