@@ -1,0 +1,904 @@
+fileFormatVersion: 2
+guid: 86b7295d0bf72b84c8ed8d0609e8366f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: instrucciones de animales_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4afd2a5c953d246aac21fbcfcf0eb9
+      internalID: 1201249922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_1
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f713975473f954698d21bc5badd143
+      internalID: 141526353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_2
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7e2d9bef062e4b97eb4e380060c9c
+      internalID: 1878007921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_3
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a508c4860374bc46ba0da16625262f9
+      internalID: -1407401841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_4
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7447534ab0e95814795677a946ee796b
+      internalID: 1134437759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_5
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 11000
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a9269db5acaf04196c2efcd139695d
+      internalID: 2076293618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f950c5904b853541a9c7ffaa4539077
+      internalID: 304343611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_7
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59b53dd8f9c62645a9189a2b7db9fa7
+      internalID: -1617570695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_8
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5e7d1336eddd443b582832389df5b0
+      internalID: -1887508973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_9
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a904aa033df8ef04eb60b243975631b5
+      internalID: 1902490222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_10
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7d76f39ef235a4bbb8c90d5900ae8a
+      internalID: 1763101987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_11
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 8800
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d4516e8989cdf43af7a27a7b3fe37a
+      internalID: 185624053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776340259586e5946971024619e5e608
+      internalID: -663693411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_13
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4219c486d46554db5e09ec6787c1a0
+      internalID: -1057251470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_14
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c84cb3be5169c3469e02bfc5ebc3679
+      internalID: -1042707918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_15
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b46cc520cc4d94a865f08bbf4fe515
+      internalID: 1821603305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_16
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8d4993242eb4c45b441c08223a475a
+      internalID: 1535398425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_17
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 6600
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dced2cc5a7fd2424fbfaeda45342d567
+      internalID: -1824445539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7331043b44c447743bf834643180c36c
+      internalID: -27089885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_19
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8768179b04af1c140b07a1ef7c429cd5
+      internalID: -886450961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_20
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd0755569cfaab41800ea3fd8717e53
+      internalID: 1362240735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_21
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c73582e029f26842a6d09a42469bbda
+      internalID: -1219750656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_22
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b4dd481da19434588b7beae1f665bc
+      internalID: 1585525390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_23
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 4400
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55432f9e49cd4c428423d7ad4745c9c
+      internalID: 1665446447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a232a247c3e18b94a9ba19ddd10f26e7
+      internalID: 1816532593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_25
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e3b22227d0da14e9ab519ddbfce4a2
+      internalID: 808494560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_26
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c704393a070b5574c81bc94df103d9f7
+      internalID: -482631009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_27
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4c06e0604f8694bbc8289be0ab4858
+      internalID: 246761429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_28
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abd6daf558170e4cb77260f92eb6f2e
+      internalID: 1114066362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_29
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 2200
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174abf7f6c4f86441a398a97610a0a5e
+      internalID: 1755528208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dcad770dbf94274daf094b9d9fed47d
+      internalID: 1278402796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_31
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3bc827f1b978f4fb4baa6041ef957b
+      internalID: 258897125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_32
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290c4c1557dcedc468ad3dccb442f0ba
+      internalID: 973568090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_33
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07f93887b8a3ad479eec4a43ed6dff7
+      internalID: 410292020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: instrucciones de animales_34
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 2200
+        height: 2200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1512c3bc1051ed24fbe0b12241a038f3
+      internalID: -840324957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      instrucciones de animales_21: -1219750656
+      instrucciones de animales_22: 1585525390
+      instrucciones de animales_19: -886450961
+      instrucciones de animales_14: -1042707918
+      instrucciones de animales_18: -27089885
+      instrucciones de animales_25: 808494560
+      instrucciones de animales_11: 185624053
+      instrucciones de animales_10: 1763101987
+      instrucciones de animales_31: 258897125
+      instrucciones de animales_5: 2076293618
+      instrucciones de animales_6: 304343611
+      instrucciones de animales_7: -1617570695
+      instrucciones de animales_23: 1665446447
+      instrucciones de animales_9: 1902490222
+      instrucciones de animales_2: 1878007921
+      instrucciones de animales_3: -1407401841
+      instrucciones de animales_34: -840324957
+      instrucciones de animales_16: 1535398425
+      instrucciones de animales_20: 1362240735
+      instrucciones de animales_24: 1816532593
+      instrucciones de animales_27: 246761429
+      instrucciones de animales_4: 1134437759
+      instrucciones de animales_28: 1114066362
+      instrucciones de animales_1: 141526353
+      instrucciones de animales_13: -1057251470
+      instrucciones de animales_30: 1278402796
+      instrucciones de animales_12: -663693411
+      instrucciones de animales_0: 1201249922
+      instrucciones de animales_26: -482631009
+      instrucciones de animales_17: -1824445539
+      instrucciones de animales_32: 973568090
+      instrucciones de animales_15: 1821603305
+      instrucciones de animales_33: 410292020
+      instrucciones de animales_8: -1887508973
+      instrucciones de animales_29: 1755528208
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
