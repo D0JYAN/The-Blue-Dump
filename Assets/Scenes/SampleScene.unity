@@ -239,9 +239,10 @@ GameObject:
   - component: {fileID: 48793324}
   - component: {fileID: 48793323}
   - component: {fileID: 48793322}
+  - component: {fileID: 48793325}
   m_Layer: 0
-  m_Name: burbujas_2
-  m_TagString: Untagged
+  m_Name: burbujas_sanas
+  m_TagString: Burbujas_Sanas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -333,6 +334,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &48793325
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48793321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.32, y: 9.869629}
+    newSize: {x: 6.32, y: 9.869629}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.32, y: 9.869629}
+  m_EdgeRadius: 0
 --- !u!1 &56653804
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350485338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.26, y: -9.16, z: 0}
+  m_LocalPosition: {x: 327.4, y: -9.16, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -887,7 +914,7 @@ GameObject:
   - component: {fileID: 369103600}
   - component: {fileID: 369103599}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Barra_Vida
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6586,7 +6613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.100006, y: -29.5}
+  m_AnchoredPosition: {x: -3.0999756, y: -29.5}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &652652240
@@ -6856,6 +6883,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 15
+  Vida: 10
+  Barra_Vida: {fileID: 369103597}
+  vida_10: {fileID: -2024498346, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_9: {fileID: 721530955, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_8: {fileID: -472082451, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_7: {fileID: -1210307301, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_6: {fileID: -1941398458, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_5: {fileID: 96180759, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_4: {fileID: -620396262, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_3: {fileID: 510390955, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_2: {fileID: -1131381425, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_1: {fileID: 1586621531, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  vida_0: {fileID: 840490770, guid: 4a928aeb10d2d4d4c9e4a7fe144322d2, type: 3}
+  "Da\xF1o_Buzo": 0
+  Empuje: 0
+  Ani_Buzo: {fileID: 0}
 --- !u!1 &821583196
 GameObject:
   m_ObjectHideFlags: 0

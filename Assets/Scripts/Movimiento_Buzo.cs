@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Movimiento_Buzo : MonoBehaviour
 {
     //Variable globales.
@@ -10,10 +10,21 @@ public class Movimiento_Buzo : MonoBehaviour
     private Rigidbody2D Rigidbody2D;
     private Vector2 moveInput;
 
+    [Header("Barra De Salud")]
+    [SerializeField] private int Vida = 8;
+    [SerializeField] private GameObject Barra_Vida;
+    [SerializeField] private Sprite vida_10, vida_9, vida_8, vida_7, vida_6, vida_5, vida_4, vida_3, vida_2, vida_1, vida_0;
+
+    public bool Daño_Buzo;
+    public int Empuje;
+
+    [SerializeField] public Animator Ani_Buzo;
+
     // Start is called before the first frame update
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
+        Ani_Buzo = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -44,18 +55,72 @@ public class Movimiento_Buzo : MonoBehaviour
             Debug.Log("Quita salud");
             PierdeVida();
         }
+
+        if (collision.gameObject.tag == "Burbujas_Sanas")
+        {
+            Debug.Log("Ganar Vida");
+            GanaVida();
+        }
     }
 
     private void PierdeVida()
     {
-        Debug.Log("Pierde Vida");
-        Reaparecer();
+        if (Vida > 1)
+        {
+            Debug.Log("Pierde Vida");
+            Vida--;
+            Barra_Vida_Buzo(Vida);
+        } else
+        {
+            Reaparecer();
+        }
+    }
+
+    private void Barra_Vida_Buzo(int salud)
+    {
+        if (salud == 9) Barra_Vida.GetComponent<Image>().sprite = vida_9;
+        if (salud == 8) Barra_Vida.GetComponent<Image>().sprite = vida_8;
+        if (salud == 7) Barra_Vida.GetComponent<Image>().sprite = vida_7;
+        if (salud == 6) Barra_Vida.GetComponent<Image>().sprite = vida_6;
+        if (salud == 5) Barra_Vida.GetComponent<Image>().sprite = vida_5;
+        if (salud == 4) Barra_Vida.GetComponent<Image>().sprite = vida_4;
+        if (salud == 3) Barra_Vida.GetComponent<Image>().sprite = vida_3;
+        if (salud == 2) Barra_Vida.GetComponent<Image>().sprite = vida_2;
+        if (salud == 1) Barra_Vida.GetComponent<Image>().sprite = vida_1;
+        if (salud == 0) Barra_Vida.GetComponent<Image>().sprite = vida_0;
     }
 
     private void Reaparecer()
     {
         Rigidbody2D.velocity = Vector3.zero;
         transform.position = moveInput;
+        Barra_Vida.GetComponent<Image>().sprite = vida_4;
+        Vida = 4;
+    }
+
+    private void GanaVida()
+    {
+        if (Vida < 10)
+        {
+            Debug.Log("Gana Vida");
+            Vida++;
+            Barra_Vida_Buzo_1(Vida);
+        }
+    }
+
+    private void Barra_Vida_Buzo_1(int salud)
+    {
+        if (salud == 10) Barra_Vida.GetComponent<Image>().sprite = vida_10;
+        if (salud == 9) Barra_Vida.GetComponent<Image>().sprite = vida_9;
+        if (salud == 8) Barra_Vida.GetComponent<Image>().sprite = vida_8;
+        if (salud == 7) Barra_Vida.GetComponent<Image>().sprite = vida_7;
+        if (salud == 6) Barra_Vida.GetComponent<Image>().sprite = vida_6;
+        if (salud == 5) Barra_Vida.GetComponent<Image>().sprite = vida_5;
+        if (salud == 4) Barra_Vida.GetComponent<Image>().sprite = vida_4;
+        if (salud == 3) Barra_Vida.GetComponent<Image>().sprite = vida_3;
+        if (salud == 2) Barra_Vida.GetComponent<Image>().sprite = vida_2;
+        if (salud == 1) Barra_Vida.GetComponent<Image>().sprite = vida_1;
+        
     }
 
 }

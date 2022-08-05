@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Burbujas_Contaminadas
+  - "Da\xF1o"
+  - Burbujas_Sanas
   layers:
   - Default
   - TransparentFX
