@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Nivel1_Start : MonoBehaviour
+public class Nivel_1 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            Carga_Nivel.nivel_Carga("Estacion");
+            Carga_Nivel_2.nivel_Carga_2("Nivel_1");
         }
     }
 }
