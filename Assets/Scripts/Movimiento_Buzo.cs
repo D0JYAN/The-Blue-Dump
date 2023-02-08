@@ -20,6 +20,10 @@ public class Movimiento_Buzo : MonoBehaviour
 
     [SerializeField] public Animator Ani_Buzo;
 
+    //Movil
+    public Joystick joystick;
+    private Vector2 move_joystick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,16 @@ public class Movimiento_Buzo : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");//Si pulsa la S = -1, si pulsa la W = 1 y si no pulsa nada = 0.
         moveInput = new Vector2(moveX, moveY);
 
+        //Movimiento con el joystick
+        float Vert_Move = joystick.Vertical;
+        float Hori_Move = joystick.Horizontal;
+        move_joystick = new Vector2(Hori_Move, Vert_Move);
+
+        //Girar al personaje pero con el joystick
+        if (Hori_Move < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else if (Hori_Move > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+
+
         //Girar al personaje.
         if (moveX < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         else if (moveX > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
@@ -45,6 +59,8 @@ public class Movimiento_Buzo : MonoBehaviour
     private void FixedUpdate()
     {
         Rigidbody2D.MovePosition(Rigidbody2D.position + moveInput * Speed * Time.fixedDeltaTime);
+
+        Rigidbody2D.MovePosition(Rigidbody2D.position + move_joystick * Speed * Time.fixedDeltaTime);
     }
 
     //Vida del personaje
