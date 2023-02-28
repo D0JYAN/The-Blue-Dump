@@ -24,7 +24,7 @@ public class Cargando_2 : MonoBehaviour
         {
             if (Operacion.progress >= 0.9f)
             {
-                texto.text = "Presiona una tecla para continuar.";
+                texto.text = "Presiona la pantalla para continuar.";
                 if (Input.anyKey)
                 {
                     Operacion.allowSceneActivation = true;

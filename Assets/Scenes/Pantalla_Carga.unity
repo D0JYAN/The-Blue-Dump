@@ -386,8 +386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1800, y: 300}
+  m_AnchoredPosition: {x: 0, y: 79.27}
+  m_SizeDelta: {x: 1800, y: 458.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1079056129
 MonoBehaviour:
@@ -411,7 +411,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c37b4dbf8276c7f40bba81e6fae631f2, type: 3}
-    m_FontSize: 90
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -422,8 +422,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Se estima que hasta un 90% de la contaminaci\xF3n marina proviene de la
-    actividad terrestre."
+  m_Text: "Cada a\xF1o, se vierten alrededor de 8 millones de toneladas de pl\xE1stico
+    en los oc\xE9anos del mundo. \n- Organizaci\xF3n de las Naciones Unidas (ONU)"
 --- !u!222 &1079056130
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c37b4dbf8276c7f40bba81e6fae631f2, type: 3}
-    m_FontSize: 90
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2

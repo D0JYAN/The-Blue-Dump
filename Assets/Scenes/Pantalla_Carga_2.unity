@@ -513,7 +513,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c37b4dbf8276c7f40bba81e6fae631f2, type: 3}
-    m_FontSize: 90
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -524,8 +524,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Alrededor 100.000 mam\xEDferos marinos mueren anualmente debido a la ingesti\xF3n
-    de pl\xE1stico."
+  m_Text: "La contaminaci\xF3n del agua del oc\xE9ano es responsable de la muerte
+    de m\xE1s de un mill\xF3n de aves marinas y 100,000 mam\xEDferos marinos cada
+    a\xF1o. \n- Greenpeace"
 --- !u!222 &1208279798
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -594,7 +595,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c37b4dbf8276c7f40bba81e6fae631f2, type: 3}
-    m_FontSize: 90
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
