@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 public class Movimiento_Buzo : MonoBehaviour
 {
     //Variable globales.
     public float Speed;
+
+    public event EventHandler muerteBuzo;
 
     private Rigidbody2D Rigidbody2D;
     private Vector2 moveInput;
@@ -88,7 +91,10 @@ public class Movimiento_Buzo : MonoBehaviour
             Barra_Vida_Buzo(Vida);
         } else
         {
-            Reaparecer();
+            Barra_Vida.GetComponent<Image>().sprite = vida_0;
+            muerteBuzo?.Invoke(this, EventArgs.Empty);
+            Destroy(gameObject);
+            //Reaparecer();
         }
     }
 
