@@ -5,7 +5,7 @@ using TMPro;
 
 public class Puntaje : MonoBehaviour
 {
-    private float Puntos;//Controlar los puntos que tenemos.
+    public float Puntos;//Controlar los puntos que tenemos.
     private TextMeshProUGUI textMesh;//Contola el componente de texto.
 
     private void Start()

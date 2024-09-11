@@ -14,7 +14,7 @@ public class Movimiento_Buzo : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Barra De Salud")]
-    [SerializeField] private int Vida = 8;
+    [SerializeField] public int Vida = 8;
     [SerializeField] private GameObject Barra_Vida;
     [SerializeField] private Sprite vida_10, vida_9, vida_8, vida_7, vida_6, vida_5, vida_4, vida_3, vida_2, vida_1, vida_0;
 
