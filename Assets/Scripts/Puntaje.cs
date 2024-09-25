@@ -5,15 +5,15 @@ using TMPro;
 
 public class Puntaje : MonoBehaviour
 {
-    private float Puntos;//Controlar los puntos que tenemos.
-    private TextMeshProUGUI textMesh;//Contola el componente de texto.
+    public float Puntos;//Controlar los puntos que tenemos.
+    public TextMeshProUGUI textMesh;//Contola el componente de texto.
 
-    private void Start()
+    public void Start()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
     }
 
-    private void Update()
+    public void Update()
     {
         textMesh.text = Puntos.ToString("0");
     }
@@ -21,5 +21,6 @@ public class Puntaje : MonoBehaviour
     public void Sumar_Puntos(float Puntos_Entrada)
     {
         Puntos += Puntos_Entrada;
+        Debug.Log("Ganar Puntos " + Puntos);
     }
 }

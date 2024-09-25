@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Basura : MonoBehaviour
 {
-    [SerializeField] private float Cantidad_Puntos;
-    [SerializeField] private Puntaje Puntaje;
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] public float Cantidad_Puntos;
+    [SerializeField] public Puntaje Puntaje;
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             Puntaje.Sumar_Puntos(Cantidad_Puntos);
             Destroy(gameObject);
+            Debug.Log("Ganar Puntos 2");
         }
     }
 }
