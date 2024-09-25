@@ -25,7 +25,7 @@ public class MenuOpciones : MonoBehaviour
 
     public void RegresarMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("NuevoMenu");
     }
 
 

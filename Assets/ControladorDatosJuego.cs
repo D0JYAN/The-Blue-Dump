@@ -12,6 +12,8 @@ public class ControladorDatosJuego : MonoBehaviour
 
     public DatosJuegos datosJuego = new DatosJuegos();
 
+    //int vidas;
+
     private void Awake()
     {
         archivoGuardado = Application.dataPath + "/datosJuego.json";
@@ -27,9 +29,13 @@ public class ControladorDatosJuego : MonoBehaviour
         {
             CargarDatos();
         }
+
         if (Input.GetKeyDown(KeyCode.G))
         {
             GuardarDatos();
+            //vidas = jugador.GetComponent<Movimiento_Buzo>().Vida;
+            //Debug.Log(vidas);
+
         }
     }
 
@@ -42,11 +48,13 @@ public class ControladorDatosJuego : MonoBehaviour
 
             Debug.Log("Posicion Jugador : " + datosJuego.posicion);
 
+            Debug.Log("vida Jugador : " + datosJuego.VidaGuardada);
+
             jugador.transform.position = datosJuego.posicion;
 
-            //jugador.GetComponent<Movimiento_Buzo>().Vida = DatosJuegos.VidaGuardada;
+           jugador.GetComponent<Movimiento_Buzo>().Vida = datosJuego.VidaGuardada;
 
-            //jugador.GetComponent<Puntaje>().Puntos = DatosJuegos.PuntosGuardados;
+           //jugador.GetComponent<Puntaje>().Puntos = datosJuego.PuntosGuardados;
         }
         else
         {
@@ -62,11 +70,15 @@ public class ControladorDatosJuego : MonoBehaviour
 
             //VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
 
-            //PuntosGuardados = jugador.GetComponent<Puntaje>().Puntos
-        };
+            VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
 
+           //PuntosGuardados = jugador.GetComponent<Puntaje>().Puntos
+        };
+       
         string cadenaJSON = JsonUtility.ToJson(nuevosDatos);
         File.WriteAllText(archivoGuardado, cadenaJSON);
         Debug.Log("Archivo guardado");
+        
+
     }
 }
