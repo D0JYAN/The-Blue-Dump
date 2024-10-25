@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using System;
 using TMPro;
 
+
 public class MenuGameOver : MonoBehaviour
 {
     [SerializeField] public GameObject menuGameOver;
@@ -43,8 +44,11 @@ public class MenuGameOver : MonoBehaviour
 
     public void salir()
     {
-        UnityEditor.EditorApplication.isPlaying = false;//detiene la ejecucion del juego en el editor Unity
-        Application.Quit();
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; // Detiene la ejecución en el editor de Unity
+        #else
+        Application.Quit(); // Sale de la aplicación en el dispositivo
+        #endif
     }
 
     private void ActualizarRanking()
