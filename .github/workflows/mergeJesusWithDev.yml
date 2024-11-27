@@ -36,8 +36,9 @@ jobs:
       # Paso 5.- Ejecutar el merge
       - name: Merge De Jesus A Dev
         run: |
+          git fetch origin Dev
           git checkout Dev
-          git merge --no-ff origin/Jesus -m "Merge Automatico De La Rama Jesus A Dev [skip ci]"
+          git merge --no-ff --strategy-option theirs origin/Jesus --allow-unrelated-histories origin/Jesus -m "Merge Automatico De La Rama Jesus A Dev [skip ci]"
           git push origin Dev
 
       # Paso 6.- Mostrar el mensaje del merge
