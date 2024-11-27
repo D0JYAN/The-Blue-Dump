@@ -4,8 +4,7 @@ name: Merge Automático de Jesus a Dev
 #Definir los eventos que activarán este workflow
 on:
   push:
-    branches:
-      - Jesus
+    branches: ["Jesus"]
 
 #Definir los trabajos que se van a realizar
 jobs:
