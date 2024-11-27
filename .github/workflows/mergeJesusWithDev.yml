@@ -24,6 +24,10 @@ jobs:
         run: |
           git config --global user.name "JIELSAN"
           git config --global user.email "jesussjg811@gmail.com"
+     
+      #Paso 3.- Descargar todas las ramas en el entorno
+      - name: Fetch all branches
+        run: git fetch --all
 
       #Paso 3.- Ejecutar el merge
       - name: Merge De Jesus A Dev
