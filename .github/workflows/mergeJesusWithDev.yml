@@ -36,8 +36,8 @@ jobs:
       # Paso 5.- Ejecutar el merge
       - name: Merge De Jesus A Dev
         run: |
-          git fetch origin Dev
-          git checkout Dev
+          git fetch origin origin/Dev
+          git checkout origin/Dev
           git merge --no-ff --strategy-option theirs origin/Jesus -m "Merge Automatico De La Rama Jesus A Dev [skip ci]"
           git push origin Dev
 
