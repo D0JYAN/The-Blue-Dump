@@ -31,7 +31,7 @@ jobs:
 
       # Paso 4.- Asegurar que la rama Jesus esté disponible localmente
       - name: Verificar Rama Jesus
-        run: git checkout Jesus origin/Jesus
+        run: git checkout origin/Jesus
 
       # Paso 5.- Ejecutar el merge
       - name: Merge De Jesus A Dev
