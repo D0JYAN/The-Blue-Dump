@@ -5,7 +5,7 @@ name: Merge Automático de Jesus a Dev
 on:
   workflow_dispatch:  # Permite la ejecución manual
   push:
-    branches: ["origin/Jesus"]  # Se ejecuta automáticamente en 'push' a la rama 'Jesus'
+    branches: ["Jesus"]  # Se ejecuta automáticamente en 'push' a la rama 'Jesus'
 
 # Definir los trabajos que se van a realizar
 jobs:
@@ -31,7 +31,7 @@ jobs:
 
       # Paso 4.- Asegurar que la rama Jesus esté disponible localmente
       - name: Verificar Rama Jesus
-        run: git checkout -b Jesus origin/Jesus
+        run: git checkout Jesus origin/Jesus
 
       # Paso 5.- Ejecutar el merge
       - name: Merge De Jesus A Dev
