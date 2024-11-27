@@ -5,7 +5,7 @@ name: Merge Automático de Jesus a Dev
 on:
   workflow_dispatch:  # Permite la ejecución manual
   push:
-    branches: ["Jesus"]  # Se ejecuta automáticamente en 'push' a la rama 'Jesus'
+    branches: ["origin/Jesus"]  # Se ejecuta automáticamente en 'push' a la rama 'Jesus'
 
 # Definir los trabajos que se van a realizar
 jobs:
