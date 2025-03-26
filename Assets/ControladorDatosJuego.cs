@@ -17,6 +17,25 @@ public class ControladorDatosJuego : MonoBehaviour
 
     //int vidas;
 
+    public Puntaje puntaje;
+
+    private void Start()
+    {
+        jugador = GameObject.FindGameObjectWithTag("Player");
+        puntaje = FindObjectOfType<Puntaje>(); // Busca el script en la escena
+
+        if (jugador == null)
+        {
+            Debug.LogError("No se encontró un objeto con la etiqueta 'Player'.");
+        }
+
+        if (puntaje == null)
+        {
+            Debug.LogError("No se encontró el script 'Puntaje' en la escena.");
+        }
+    }
+
+
     private void Awake()
     {
         if (instancia == null)
@@ -102,6 +121,7 @@ public class ControladorDatosJuego : MonoBehaviour
         {
             posicion = jugador.transform.position,
             VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
+            PuntosGuardados = puntaje != null ? puntaje.Puntos : 0,
             escenaActual = SceneManager.GetActiveScene().name
         };
 
