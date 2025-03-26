@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class ControladorDatosJuego : MonoBehaviour
 {
+
+    public static ControladorDatosJuego instancia; // Instancia única
 
     public GameObject jugador;
 
@@ -16,6 +19,16 @@ public class ControladorDatosJuego : MonoBehaviour
 
     private void Awake()
     {
+        if (instancia == null)
+        {
+            instancia = this;
+            DontDestroyOnLoad(gameObject); // Evita que se destruya al cambiar de escena
+        }
+        else
+        {
+            Destroy(gameObject); // Si ya existe una instancia, elimina la nueva
+        }
+
         archivoGuardado = Application.dataPath + "/datosJuego.json";
 
         jugador = GameObject.FindGameObjectWithTag("Player");
@@ -39,22 +52,41 @@ public class ControladorDatosJuego : MonoBehaviour
         }
     }
 
+    private void ReasignarJugador()
+    {
+        if (jugador == null)
+        {
+            jugador = GameObject.FindGameObjectWithTag("Player");
+
+            if (jugador == null)
+            {
+                Debug.LogError("No se encontró el objeto 'Player'. Verifica que el personaje tenga la etiqueta correcta.");
+            }
+        }
+    }
+
     private void CargarDatos()
     {
+        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a él
+
         if (File.Exists(archivoGuardado))
         {
             string contenido = File.ReadAllText(archivoGuardado);
             datosJuego = JsonUtility.FromJson<DatosJuegos>(contenido);
 
-            Debug.Log("Posicion Jugador : " + datosJuego.posicion);
+            Debug.Log("Posición Jugador: " + datosJuego.posicion);
+            Debug.Log("Vida Jugador: " + datosJuego.VidaGuardada);
 
-            Debug.Log("vida Jugador : " + datosJuego.VidaGuardada);
+            if (datosJuego.escenaActual == SceneManager.GetActiveScene().name)
+            {
+                jugador.transform.position = datosJuego.posicion;
+            }
+            else
+            {
+                Debug.Log("Nueva escena detectada, se mantiene la posición por defecto.");
+            }
 
-            jugador.transform.position = datosJuego.posicion;
-
-           jugador.GetComponent<Movimiento_Buzo>().Vida = datosJuego.VidaGuardada;
-
-           //jugador.GetComponent<Puntaje>().Puntos = datosJuego.PuntosGuardados;
+            jugador.GetComponent<Movimiento_Buzo>().Vida = datosJuego.VidaGuardada;
         }
         else
         {
@@ -62,23 +94,20 @@ public class ControladorDatosJuego : MonoBehaviour
         }
     }
 
-    private void GuardarDatos()
+    public void GuardarDatos()
     {
+        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a él
+
         DatosJuegos nuevosDatos = new DatosJuegos()
         {
             posicion = jugador.transform.position,
-
-            //VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
-
             VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
-
-           //PuntosGuardados = jugador.GetComponent<Puntaje>().Puntos
+            escenaActual = SceneManager.GetActiveScene().name
         };
-       
+
         string cadenaJSON = JsonUtility.ToJson(nuevosDatos);
         File.WriteAllText(archivoGuardado, cadenaJSON);
         Debug.Log("Archivo guardado");
-        
-
     }
+
 }
