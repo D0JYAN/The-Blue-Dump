@@ -52,6 +52,12 @@ public class ControladorDatosJuego : MonoBehaviour
 
         jugador = GameObject.FindGameObjectWithTag("Player");
 
+        puntaje = FindObjectOfType<Puntaje>();
+        if (puntaje == null)
+        {
+            Debug.LogError("No se encontró el objeto Puntaje en la escena.");
+        }
+
         CargarDatos();
     }
 
@@ -93,9 +99,12 @@ public class ControladorDatosJuego : MonoBehaviour
             string contenido = File.ReadAllText(archivoGuardado);
             datosJuego = JsonUtility.FromJson<DatosJuegos>(contenido);
 
-            Debug.Log("Posición Jugador: " + datosJuego.posicion);
-            Debug.Log("Vida Jugador: " + datosJuego.VidaGuardada);
+            Debug.Log("Cargando datos...");
+            Debug.Log("Posición: " + datosJuego.posicion);
+            Debug.Log("Vida: " + datosJuego.VidaGuardada);
+            Debug.Log("Puntos Guardados: " + datosJuego.PuntosGuardados);
 
+            // Si estamos en la misma escena que se guardó, restaurar la posición
             if (datosJuego.escenaActual == SceneManager.GetActiveScene().name)
             {
                 jugador.transform.position = datosJuego.posicion;
@@ -105,13 +114,27 @@ public class ControladorDatosJuego : MonoBehaviour
                 Debug.Log("Nueva escena detectada, se mantiene la posición por defecto.");
             }
 
+            // Restaurar la vida del jugador
             jugador.GetComponent<Movimiento_Buzo>().Vida = datosJuego.VidaGuardada;
+
+            // Restaurar el puntaje sumándolo en lugar de sobrescribirlo
+            if (Puntaje.instancia != null)
+            {
+                Puntaje.instancia.Puntos += datosJuego.PuntosGuardados; // Sumar en vez de sobrescribir
+                Puntaje.instancia.ActualizarTextoPuntaje();
+            }
+            else
+            {
+                Debug.LogWarning("Puntaje es nulo, no se pueden cargar los puntos.");
+            }
         }
         else
         {
-            Debug.Log("El archivo no existe");
+            Debug.Log("No hay datos previos guardados.");
         }
     }
+
+
 
     public void GuardarDatos()
     {
@@ -121,13 +144,14 @@ public class ControladorDatosJuego : MonoBehaviour
         {
             posicion = jugador.transform.position,
             VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
-            PuntosGuardados = puntaje != null ? puntaje.Puntos : 0,
-            escenaActual = SceneManager.GetActiveScene().name
+            PuntosGuardados = Puntaje.instancia != null ? Puntaje.instancia.Puntos : 0,
+            escenaActual = SceneManager.GetActiveScene().name,
+
         };
 
-        string cadenaJSON = JsonUtility.ToJson(nuevosDatos);
+        string cadenaJSON = JsonUtility.ToJson(nuevosDatos, true);
         File.WriteAllText(archivoGuardado, cadenaJSON);
-        Debug.Log("Archivo guardado");
+        Debug.Log("Archivo guardado - Vida: " + nuevosDatos.VidaGuardada + " - Puntos: " + nuevosDatos.PuntosGuardados);
     }
 
 }

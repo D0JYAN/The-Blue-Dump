@@ -1,1 +1,10 @@
-{"posicion":{"x":219.68362426757813,"y":-7.905966758728027,"z":-1.0},"VidaGuardada":8,"PuntosGuardados":20.0,"escenaActual":"Tutorial"}
+{
+    "posicion": {
+        "x": 106.67870330810547,
+        "y": -11.058775901794434,
+        "z": -1.0
+    },
+    "VidaGuardada": 9,
+    "PuntosGuardados": 180.0,
+    "escenaActual": "Nivel_1"
+}
