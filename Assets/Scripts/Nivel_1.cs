@@ -9,7 +9,17 @@ public class Nivel_1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Carga_Nivel_2.nivel_Carga_2("Nivel_1");
+            ControladorDatosJuego controlador = FindObjectOfType<ControladorDatosJuego>();
+            if (controlador != null)
+            {
+                controlador.GuardarDatos();
+                Carga_Nivel_2.nivel_Carga_2("Nivel_1");
+                Debug.Log("Punto de partida guardado");
+            }
+            else
+            {
+                Debug.LogError("No se encontró ControladorDatosJuego en la escena.");
+            }
         }
     }
 }
