@@ -12,7 +12,7 @@ public class Menu2 : MonoBehaviour
 
     private void Start()
     {
-        archivoGuardado = Application.dataPath + "/datosJuego.json";
+        archivoGuardado = Application.persistentdataPath + "/datosJuego.json";
         CargarUltimaEscena();
     }
 
