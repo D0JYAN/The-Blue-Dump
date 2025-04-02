@@ -1,22 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
+Ôªøusing UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ControladorDatosJuego : MonoBehaviour
 {
-
-    public static ControladorDatosJuego instancia; // Instancia ˙nica
+    public static ControladorDatosJuego instancia; // Instancia √∫nica
 
     public GameObject jugador;
-
-    public string archivoGuardado;
-
-    public DatosJuegos datosJuego = new DatosJuegos();
-
-    //int vidas;
-
     public Puntaje puntaje;
 
     private void Start()
@@ -26,15 +15,14 @@ public class ControladorDatosJuego : MonoBehaviour
 
         if (jugador == null)
         {
-            Debug.LogError("No se encontrÛ un objeto con la etiqueta 'Player'.");
+            Debug.LogError("No se encontr√≥ un objeto con la etiqueta 'Player'.");
         }
 
         if (puntaje == null)
         {
-            Debug.LogError("No se encontrÛ el script 'Puntaje' en la escena.");
+            Debug.LogError("No se encontr√≥ el script 'Puntaje' en la escena.");
         }
     }
-
 
     private void Awake()
     {
@@ -46,16 +34,6 @@ public class ControladorDatosJuego : MonoBehaviour
         else
         {
             Destroy(gameObject); // Si ya existe una instancia, elimina la nueva
-        }
-
-        archivoGuardado = Application.dataPath + "/datosJuego.json";
-
-        jugador = GameObject.FindGameObjectWithTag("Player");
-
-        puntaje = FindObjectOfType<Puntaje>();
-        if (puntaje == null)
-        {
-            Debug.LogError("No se encontrÛ el objeto Puntaje en la escena.");
         }
 
         CargarDatos();
@@ -71,10 +49,38 @@ public class ControladorDatosJuego : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             GuardarDatos();
-            //vidas = jugador.GetComponent<Movimiento_Buzo>().Vida;
-            //Debug.Log(vidas);
-
         }
+
+        // Nuevo: Reiniciar vida y puntos si se presiona "B" o "R"
+        if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.R))
+        {
+            ReiniciarDatos();
+        }
+    }
+
+    private void ReiniciarDatos()
+    {
+        // Valores iniciales
+        int vidaInicial = 10;
+        float puntosIniciales = 0;
+
+        // Restaurar vida del jugador
+        jugador.GetComponent<Movimiento_Buzo>().Vida = vidaInicial;
+
+        // Restaurar puntos
+        if (Puntaje.instancia != null)
+        {
+            Puntaje.instancia.Puntos = puntosIniciales;
+            Puntaje.instancia.ActualizarTextoPuntaje();
+        }
+
+        // Guardar valores reiniciados en PlayerPrefs
+        PlayerPrefs.SetInt("Vida", vidaInicial);
+        PlayerPrefs.SetFloat("Puntos", puntosIniciales);
+        PlayerPrefs.Save();
+
+        // Mensaje en consola
+        Debug.Log("üîÑ Datos reiniciados: Vida = " + vidaInicial + ", Puntos = " + puntosIniciales);
     }
 
     private void ReasignarJugador()
@@ -85,73 +91,70 @@ public class ControladorDatosJuego : MonoBehaviour
 
             if (jugador == null)
             {
-                Debug.LogError("No se encontrÛ el objeto 'Player'. Verifica que el personaje tenga la etiqueta correcta.");
+                Debug.LogError("No se encontr√≥ el objeto 'Player'. Verifica que el personaje tenga la etiqueta correcta.");
             }
         }
     }
 
     private void CargarDatos()
     {
-        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a Èl
+        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a √©l
 
-        if (File.Exists(archivoGuardado))
+        string escenaGuardada = PlayerPrefs.GetString("EscenaActual", "");
+        string escenaActual = SceneManager.GetActiveScene().name;
+
+        Debug.Log("üìå √öltima escena guardada: " + escenaGuardada);
+        Debug.Log("üìå Escena actual: " + escenaActual);
+
+        // Restaurar vida y mostrar en consola
+        int vidaGuardada = PlayerPrefs.GetInt("Vida", 100);
+        jugador.GetComponent<Movimiento_Buzo>().Vida = vidaGuardada;
+        Debug.Log("‚ù§Ô∏è Vida restaurada: " + vidaGuardada);
+
+        // Restaurar puntos y mostrar en consola
+        float puntosGuardados = PlayerPrefs.GetFloat("Puntos", 0);
+        if (Puntaje.instancia != null)
         {
-            string contenido = File.ReadAllText(archivoGuardado);
-            datosJuego = JsonUtility.FromJson<DatosJuegos>(contenido);
+            Puntaje.instancia.Puntos = puntosGuardados;
+            Puntaje.instancia.ActualizarTextoPuntaje();
+        }
+        Debug.Log("‚≠ê Puntos restaurados: " + puntosGuardados);
 
-            Debug.Log("Cargando datos...");
-            Debug.Log("PosiciÛn: " + datosJuego.posicion);
-            Debug.Log("Vida: " + datosJuego.VidaGuardada);
-            Debug.Log("Puntos Guardados: " + datosJuego.PuntosGuardados);
+        // Restaurar posici√≥n solo si la escena es la misma
+        if (escenaGuardada == escenaActual)
+        {
+            float x = PlayerPrefs.GetFloat("PosX", jugador.transform.position.x);
+            float y = PlayerPrefs.GetFloat("PosY", jugador.transform.position.y);
+            float z = PlayerPrefs.GetFloat("PosZ", jugador.transform.position.z);
 
-            // Si estamos en la misma escena que se guardÛ, restaurar la posiciÛn
-            if (datosJuego.escenaActual == SceneManager.GetActiveScene().name)
-            {
-                jugador.transform.position = datosJuego.posicion;
-            }
-            else
-            {
-                Debug.Log("Nueva escena detectada, se mantiene la posiciÛn por defecto.");
-            }
-
-            // Restaurar la vida del jugador
-            jugador.GetComponent<Movimiento_Buzo>().Vida = datosJuego.VidaGuardada;
-
-            // Restaurar el puntaje sum·ndolo en lugar de sobrescribirlo
-            if (Puntaje.instancia != null)
-            {
-                Puntaje.instancia.Puntos += datosJuego.PuntosGuardados; // Sumar en vez de sobrescribir
-                Puntaje.instancia.ActualizarTextoPuntaje();
-            }
-            else
-            {
-                Debug.LogWarning("Puntaje es nulo, no se pueden cargar los puntos.");
-            }
+            jugador.transform.position = new Vector3(x, y, z);
+            Debug.Log("üìå Posici√≥n restaurada: " + jugador.transform.position);
         }
         else
         {
-            Debug.Log("No hay datos previos guardados.");
+            Debug.Log("üìå Nueva escena detectada, ignorando coordenadas previas.");
+
+            // No modificar la posici√≥n del jugador (se queda como est√° en Unity)
+            // Pero actualizamos la escena actual para futuros guardados
+            PlayerPrefs.SetString("EscenaActual", escenaActual);
+            PlayerPrefs.Save();
         }
     }
-
 
 
     public void GuardarDatos()
     {
-        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a Èl
+        ReasignarJugador(); // Asegurar que el jugador no sea nulo antes de acceder a √©l
 
-        DatosJuegos nuevosDatos = new DatosJuegos()
-        {
-            posicion = jugador.transform.position,
-            VidaGuardada = jugador.GetComponent<Movimiento_Buzo>().Vida,
-            PuntosGuardados = Puntaje.instancia != null ? Puntaje.instancia.Puntos : 0,
-            escenaActual = SceneManager.GetActiveScene().name,
+        PlayerPrefs.SetFloat("PosX", jugador.transform.position.x);
+        PlayerPrefs.SetFloat("PosY", jugador.transform.position.y);
+        PlayerPrefs.SetFloat("PosZ", jugador.transform.position.z);
+        PlayerPrefs.SetInt("Vida", jugador.GetComponent<Movimiento_Buzo>().Vida);
+        PlayerPrefs.SetFloat("Puntos", Puntaje.instancia != null ? Puntaje.instancia.Puntos : 0);
+        PlayerPrefs.SetString("UltimaEscena", SceneManager.GetActiveScene().name);
 
-        };
+        PlayerPrefs.Save(); // Guardar los datos en el almacenamiento local
 
-        string cadenaJSON = JsonUtility.ToJson(nuevosDatos, true);
-        File.WriteAllText(archivoGuardado, cadenaJSON);
-        Debug.Log("Archivo guardado - Vida: " + nuevosDatos.VidaGuardada + " - Puntos: " + nuevosDatos.PuntosGuardados);
+        Debug.Log("‚úÖ Datos guardados en PlayerPrefs.");
     }
-
 }
