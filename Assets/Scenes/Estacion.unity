@@ -3784,6 +3784,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueMark: {fileID: 1842911023}
+  dialoguePanel: {fileID: 224054118}
+  dialogueText: {fileID: 1318594895}
+  dialogueLines:
+  - 'Pulpleito: Es peligroso ahi afuera, toma esto!'
+  - "\xA1HAS OBTENIDO UN MAPA!"
+  - "Pulpleito: ... Qu\xE9? Esperabas una espada?"
+  - 'Pulpleito: Soy un pulpo, no un herrero!'
 --- !u!1 &1505001308
 GameObject:
   m_ObjectHideFlags: 0
