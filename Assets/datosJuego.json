@@ -1,10 +1,10 @@
 {
     "posicion": {
-        "x": -5.5,
-        "y": -4.435439109802246,
-        "z": -1.0
+        "x": -29.610000610351564,
+        "y": -10.378479957580567,
+        "z": 0.0
     },
     "VidaGuardada": 10,
     "PuntosGuardados": 0.0,
-    "escenaActual": "Tutorial"
+    "escenaActual": "Estacion"
 }
