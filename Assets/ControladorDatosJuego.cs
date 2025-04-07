@@ -61,11 +61,10 @@ public class ControladorDatosJuego : MonoBehaviour
     private void ReiniciarDatos()
     {
         // Valores iniciales
-        int vidaInicial = 10;
         float puntosIniciales = 0;
 
         // Restaurar vida del jugador
-        jugador.GetComponent<Movimiento_Buzo>().Vida = vidaInicial;
+
 
         // Restaurar puntos
         if (Puntaje.instancia != null)
@@ -75,12 +74,11 @@ public class ControladorDatosJuego : MonoBehaviour
         }
 
         // Guardar valores reiniciados en PlayerPrefs
-        PlayerPrefs.SetInt("Vida", vidaInicial);
         PlayerPrefs.SetFloat("Puntos", puntosIniciales);
         PlayerPrefs.Save();
 
         // Mensaje en consola
-        Debug.Log("🔄 Datos reiniciados: Vida = " + vidaInicial + ", Puntos = " + puntosIniciales);
+        Debug.Log("🔄 Datos reiniciados: Puntos = " + puntosIniciales);
     }
 
     private void ReasignarJugador()
@@ -106,12 +104,7 @@ public class ControladorDatosJuego : MonoBehaviour
         Debug.Log("📌 Última escena guardada: " + escenaGuardada);
         Debug.Log("📌 Escena actual: " + escenaActual);
 
-        // Restaurar vida y mostrar en consola
-        int vidaGuardada = PlayerPrefs.GetInt("Vida", 100);
-        jugador.GetComponent<Movimiento_Buzo>().Vida = vidaGuardada;
-        Debug.Log("❤️ Vida restaurada: " + vidaGuardada);
-
-        // Restaurar puntos y mostrar en consola
+        // Restaurar puntos
         float puntosGuardados = PlayerPrefs.GetFloat("Puntos", 0);
         if (Puntaje.instancia != null)
         {
@@ -134,13 +127,11 @@ public class ControladorDatosJuego : MonoBehaviour
         {
             Debug.Log("📌 Nueva escena detectada, ignorando coordenadas previas.");
 
-            // No modificar la posición del jugador (se queda como está en Unity)
-            // Pero actualizamos la escena actual para futuros guardados
+            // Actualizar escena actual para futuros guardados
             PlayerPrefs.SetString("EscenaActual", escenaActual);
             PlayerPrefs.Save();
         }
     }
-
 
     public void GuardarDatos()
     {
@@ -149,12 +140,11 @@ public class ControladorDatosJuego : MonoBehaviour
         PlayerPrefs.SetFloat("PosX", jugador.transform.position.x);
         PlayerPrefs.SetFloat("PosY", jugador.transform.position.y);
         PlayerPrefs.SetFloat("PosZ", jugador.transform.position.z);
-        PlayerPrefs.SetInt("Vida", jugador.GetComponent<Movimiento_Buzo>().Vida);
         PlayerPrefs.SetFloat("Puntos", Puntaje.instancia != null ? Puntaje.instancia.Puntos : 0);
         PlayerPrefs.SetString("UltimaEscena", SceneManager.GetActiveScene().name);
 
-        PlayerPrefs.Save(); // Guardar los datos en el almacenamiento local
+        PlayerPrefs.Save(); // Guardar los datos
 
-        Debug.Log("✅ Datos guardados en PlayerPrefs.");
+        Debug.Log("✅ Datos guardados en PlayerPrefs (sin vida).");
     }
 }
