@@ -19,13 +19,22 @@ public class DialogueStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPlayerInRange)
+        if (isPlayerInRange && TouchDetected())
         {
             if (!didDialogueStart)
             {
                 StartDialogue();
             }
+            else if (dialogueText.text == dialogueLines[lineIndex])
+            {
+                NextDialogueLine();
+            }
         }
+    }
+
+    private bool TouchDetected()
+    {
+        return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
     }
 
     private void StartDialogue()
@@ -35,6 +44,21 @@ public class DialogueStart : MonoBehaviour
         dialogueMark.SetActive(false);
         lineIndex = 0;
         StartCoroutine(ShowLine());
+    }
+
+    private void NextDialogueLine()
+    {
+        lineIndex++;
+        if(lineIndex < dialogueLines.Length)
+        {
+            StartCoroutine(ShowLine());
+        }
+        else
+        {
+            didDialogueStart = false;
+            dialoguePanel.SetActive(false);
+            dialogueMark.SetActive(true);
+        }
     }
 
     private IEnumerator ShowLine()
@@ -52,7 +76,7 @@ public class DialogueStart : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            isPlayerInRange = false;
+            isPlayerInRange =true;
             dialogueMark.SetActive(true);
         }
         
@@ -62,7 +86,7 @@ public class DialogueStart : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            isPlayerInRange = true;
+            isPlayerInRange = false;
             dialogueMark.SetActive(false);
         }
             
