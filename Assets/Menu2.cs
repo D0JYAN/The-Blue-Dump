@@ -29,4 +29,9 @@ public class Menu2 : MonoBehaviour
     {
         SceneManager.LoadScene("Options");
     }
+
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
