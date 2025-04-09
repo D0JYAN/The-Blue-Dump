@@ -34,8 +34,11 @@ public class DialogueStart : MonoBehaviour
 
     private bool TouchDetected()
     {
-        return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
+        // Para pruebas en PC (click izquierdo) o para toques en móvil
+        return Input.GetMouseButtonDown(0) ||
+               (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
     }
+
 
     private void StartDialogue()
     {
