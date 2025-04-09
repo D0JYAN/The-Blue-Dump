@@ -31,8 +31,6 @@ public class MenuPausa : MonoBehaviour
 
     public void Cerrar()
     {
-        //Debug.Log("Cerrando juego");
-        //Application.Quit();
         SceneManager.LoadScene("NuevoMenu");
     }
 }
