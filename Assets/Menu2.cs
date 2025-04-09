@@ -21,6 +21,7 @@ public class Menu2 : MonoBehaviour
 
     public void Play()
     {
+        Time.timeScale = 1f;
         Debug.Log("Cargando escena: " + ultimaEscenaGuardada);
         SceneManager.LoadScene(ultimaEscenaGuardada);
     }
