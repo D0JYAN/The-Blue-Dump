@@ -33,6 +33,7 @@ public class Menu2 : MonoBehaviour
 
     public void Reiniciar()
     {
+
         // Reiniciar solo el puntaje
         PlayerPrefs.SetFloat("Puntos", 0); // Actualiza el valor guardado a cero
 
@@ -41,6 +42,8 @@ public class Menu2 : MonoBehaviour
             Puntaje.instancia.Puntos = 0;
             Puntaje.instancia.ActualizarTextoPuntaje();
         }
+
+        Time.timeScale = 1f;
 
         // Cargar la escena inicial
         SceneManager.LoadScene("Tutorial");
