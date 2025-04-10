@@ -11875,12 +11875,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 0}
-  archivoGuardado: 
-  datosJuego:
-    posicion: {x: 0, y: 0, z: 0}
-    VidaGuardada: 0
-    PuntosGuardados: 0
-    escenaActual: 
   puntaje: {fileID: 0}
 --- !u!4 &2022946696
 Transform:
