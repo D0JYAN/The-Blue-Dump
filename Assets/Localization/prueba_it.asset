@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1064886366208
-    m_Localized: a schermo intero
+    m_Localized: A schermo intero
     m_Metadata:
       m_Items: []
   - m_Id: 2894383050752
@@ -35,15 +35,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3197987745792
-    m_Localized: meta
+    m_Localized: Meta
     m_Metadata:
       m_Items: []
   - m_Id: 4149545299968
-    m_Localized: basso
+    m_Localized: Basso
     m_Metadata:
       m_Items: []
   - m_Id: 120330109349888
     m_Localized: Lingua
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181174723540365312
+    m_Localized: Filtro colore
     m_Metadata:
       m_Items: []
   references:
