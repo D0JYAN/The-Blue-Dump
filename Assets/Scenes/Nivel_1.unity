@@ -1067,7 +1067,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2727,7 +2727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -2.7999878, y: 2.0999756}
+  m_AnchoredPosition: {x: -2.8000488, y: 2.0999756}
   m_SizeDelta: {x: 222.3, y: 159.84}
   m_Pivot: {x: 1, y: 0}
 --- !u!1 &751014187
@@ -3977,7 +3977,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 2147483703
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 112a07af676e6ae4fb80cba0bab3fca9, type: 2}
   m_TargetDisplay: 0
@@ -93651,9 +93651,9 @@ GameObject:
   - component: {fileID: 1546519230}
   - component: {fileID: 1546519234}
   - component: {fileID: 1546519233}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: medusa_
-  m_TagString: Untagged
+  m_TagString: Medusa
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93758,6 +93758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  waitTime: 0
   waypoints:
   - {fileID: 1297099885}
   - {fileID: 1269581029}
@@ -93773,7 +93774,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
