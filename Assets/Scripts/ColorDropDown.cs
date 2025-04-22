@@ -11,11 +11,17 @@ public class ColorDropDown : MonoBehaviour
     void Start()
     {
         colorModeDropdown.onValueChanged.AddListener(OnDropdownChanged);
+
+        int savedIndex = PlayerPrefs.GetInt("ColorBlindMode", 0); // 0 es el valor por defecto (Normal)
+        colorModeDropdown.value = savedIndex;
+        filterScript.mode = (ColorBlindMode)savedIndex;
     }
 
     void OnDropdownChanged(int index)
     {
-        // Asegúrate de que el orden de las opciones en el Dropdown coincida con el orden del enum
         filterScript.mode = (ColorBlindMode)index;
+
+        PlayerPrefs.SetInt("ColorBlindMode", index);
+        PlayerPrefs.Save();
     }
 }
