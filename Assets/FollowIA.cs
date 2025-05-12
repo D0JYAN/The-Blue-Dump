@@ -5,25 +5,48 @@ using UnityEngine;
 public class FollowIA : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float minDistance;
+    [SerializeField] private float minDistance;         // Distancia para atacar
+    [SerializeField] private float rangoDeteccion;      // Radio para empezar a seguir
     [SerializeField] private Transform Player;
 
     private bool isFacingRight = true;
+    private Vector3 posicionInicial;
 
-    // Update is called once per frame
+    void Start()
+    {
+        posicionInicial = transform.position;
+    }
+
     void Update()
-    { 
-        if(Vector2.Distance(transform.position, Player.position) > minDistance)
+    {
+        float distanciaAlJugador = Vector2.Distance(transform.position, Player.position);
+
+        if (distanciaAlJugador <= rangoDeteccion)
         {
-            transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+            if (distanciaAlJugador > minDistance)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+            }
+            else
+            {
+                Attack();
+            }
+
+            bool isPlayerRight = transform.position.x < Player.transform.position.x;
+            Flip(isPlayerRight);
         }
         else
         {
-            Attack();
-        }
+            // Regresar a la posición inicial si el jugador está fuera del rango
+            if (Vector2.Distance(transform.position, posicionInicial) > 0.1f)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, posicionInicial, speed * Time.deltaTime);
 
-        bool isPlayerRight = transform.position.x < Player.transform.position.x;
-        Flip(isPlayerRight);
+                // Ajustar dirección mientras regresa
+                bool isGoingRight = transform.position.x < posicionInicial.x;
+                Flip(isGoingRight);
+            }
+        }
     }
 
     private void Attack()
@@ -33,7 +56,7 @@ public class FollowIA : MonoBehaviour
 
     private void Flip(bool isPlayerRight)
     {
-        if((isFacingRight && !isPlayerRight) || (!isFacingRight && isPlayerRight))
+        if ((isFacingRight && !isPlayerRight) || (!isFacingRight && isPlayerRight))
         {
             isFacingRight = !isFacingRight;
             Vector3 scale = transform.localScale;
@@ -42,4 +65,11 @@ public class FollowIA : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, rangoDeteccion);
+    }
 }
+
+

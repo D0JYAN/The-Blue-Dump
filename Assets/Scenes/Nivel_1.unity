@@ -3929,7 +3929,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  minDistance: 1.5
+  minDistance: 0
+  rangoDeteccion: 40
   Player: {fileID: 127004210}
 --- !u!61 &1163716296
 BoxCollider2D:
