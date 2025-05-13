@@ -131,10 +131,10 @@ TextureImporter:
       name: medusa_1
       rect:
         serializedVersion: 2
-        x: 151
-        y: 132
-        width: 574
-        height: 1104
+        x: 106
+        y: 128
+        width: 664
+        height: 1103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
