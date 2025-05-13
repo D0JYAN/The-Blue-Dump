@@ -81,10 +81,28 @@ public class Movimiento_Buzo : MonoBehaviour
             GanaVida();
         }
 
-        if (collision.gameObject.tag == "Medusa")
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Medusa"))
         {
-            Debug.Log("perder vida por medusa");
+            Debug.Log("Perder vida por colisión con medusa");
             PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
+        }
+
+        if (collision.gameObject.CompareTag("Tiburon"))
+        {
+            Debug.Log("Perder vida por colisión con medusa");
+            PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
         }
     }
 
