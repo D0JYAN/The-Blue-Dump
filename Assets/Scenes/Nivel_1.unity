@@ -260,7 +260,7 @@ Animator:
   m_GameObject: {fileID: 127004204}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ecf5cfc65cce324695ad8d6f4f7aa89, type: 2}
+  m_Controller: {fileID: 9100000, guid: a7261323c6c624f40902eb5e2aa583a9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -284,7 +284,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 5.4599996, y: 8.994389}
+  m_Size: {x: 4, y: 7.5}
   m_Direction: 0
 --- !u!50 &127004208
 Rigidbody2D:
@@ -348,7 +348,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -597225280, guid: f456473ef7a292244a005d0ffcf2c98b, type: 3}
+  m_Sprite: {fileID: 997411071, guid: 191e7161a178b2c419851a7f3609cb0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93170,7 +93170,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1414338250
 RectTransform:
