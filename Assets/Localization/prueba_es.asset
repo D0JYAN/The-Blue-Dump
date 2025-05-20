@@ -35,7 +35,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3197987745792
-    m_Localized: media
+    m_Localized: Media
     m_Metadata:
       m_Items: []
   - m_Id: 4149545299968
@@ -44,6 +44,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 120330109349888
     m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181174723540365312
+    m_Localized: Filtro de Color
     m_Metadata:
       m_Items: []
   references:

@@ -44,6 +44,14 @@ public class ColorBlindFilter : MonoBehaviour
         material.SetColor("_R", RGB[0, 0]);
         material.SetColor("_G", RGB[0, 1]);
         material.SetColor("_B", RGB[0, 2]);
+
+        int savedMode = PlayerPrefs.GetInt("ColorBlindMode", 0); // 0 es Normal por defecto
+        mode = (ColorBlindMode)savedMode;
+        previousMode = ColorBlindMode.Normal;
+
+        material.SetColor("_R", RGB[(int)mode, 0]);
+        material.SetColor("_G", RGB[(int)mode, 1]);
+        material.SetColor("_B", RGB[(int)mode, 2]);
     }
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)

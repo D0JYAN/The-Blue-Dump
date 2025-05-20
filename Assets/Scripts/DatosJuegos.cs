@@ -11,4 +11,7 @@ public class DatosJuegos
     public int VidaGuardada;
 
     public float PuntosGuardados;
+
+    public string escenaActual;
+
 }

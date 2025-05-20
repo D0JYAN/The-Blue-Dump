@@ -5,22 +5,51 @@ using TMPro;
 
 public class Puntaje : MonoBehaviour
 {
-    public float Puntos;//Controlar los puntos que tenemos.
-    public TextMeshProUGUI textMesh;//Contola el componente de texto.
+    public static Puntaje instancia;
+    public float Puntos; // Controlar los puntos que tenemos.
+    public TextMeshProUGUI textMesh; // Controla el componente de texto.
 
-    public void Start()
+    private void Awake()
     {
-        textMesh = GetComponent<TextMeshProUGUI>();
+        if (instancia == null)
+        {
+            instancia = this;
+            DontDestroyOnLoad(gameObject); // Mantener entre escenas
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
-    public void Update()
+    private void Start()
     {
-        textMesh.text = Puntos.ToString("0");
+        if (textMesh == null)
+        {
+            textMesh = GetComponent<TextMeshProUGUI>();
+        }
+
+        ActualizarTextoPuntaje();
     }
 
-    public void Sumar_Puntos(float Puntos_Entrada)
+    private void Update()
     {
-        Puntos += Puntos_Entrada;
+        ActualizarTextoPuntaje();
+    }
+
+    public void Sumar_Puntos(float puntosEntrada)
+    {
+        Puntos += puntosEntrada;
+        ActualizarTextoPuntaje();
         Debug.Log("Ganar Puntos " + Puntos);
+    }
+
+    public void ActualizarTextoPuntaje()
+    {
+        if (textMesh != null)
+        {
+            textMesh.text = Puntos.ToString("0");
+        }
     }
 }
