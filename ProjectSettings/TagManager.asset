@@ -7,6 +7,8 @@ TagManager:
   - Burbujas_Contaminadas
   - "Da\xF1o"
   - Burbujas_Sanas
+  - Medusa
+  - Tiburon
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemigos
   - 
   - 
   - 
