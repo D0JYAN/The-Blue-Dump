@@ -1,0 +1,46 @@
+# Nombre del Workflow
+name: Merge Automático de Jesus a Dev
+
+# Definir los eventos que activarán este workflow
+on:
+  workflow_dispatch:  # Permite la ejecución manual
+  push:
+    branches: ["Jesus"]  # Se ejecuta automáticamente en 'push' a la rama 'Jesus'
+
+# Definir los trabajos que se van a realizar
+jobs:
+  merge-automatico:
+    # Especificar el entorno en el cual correrá la ejecución
+    runs-on: ubuntu-latest
+
+    # Pasos a realizar
+    steps:
+      # Paso 1.- Clonar el repositorio en el entorno
+      - name: Clonar El Repositorio
+        uses: actions/checkout@v3
+
+      # Paso 2.- Configurar Git en el entorno
+      - name: Configurar Git
+        run: |
+          git config --global user.name "JIELSAN"
+          git config --global user.email "jesussjg811@gmail.com"
+
+      # Paso 3.- Descargar todas las ramas en el entorno
+      - name: Fetch all branches
+        run: git fetch --all
+
+      # Paso 4.- Asegurar que la rama Jesus esté disponible localmente
+      - name: Verificar Rama Jesus
+        run: git checkout origin/Jesus
+
+      # Paso 5.- Ejecutar el merge
+      - name: Merge De Jesus A Dev
+        run: |
+          git fetch origin Dev
+          git checkout Dev
+          git merge --no-ff --strategy-option theirs origin/Jesus --allow-unrelated-histories origin/Jesus -m "Merge Automatico De La Rama Jesus A Dev [skip ci]"
+          git push origin Dev
+
+      # Paso 6.- Mostrar el mensaje del merge
+      - name: Notificacion Via GitHub Logs
+        run: echo "El Merge De La Rama Jesus Con Su Rama De Origen Dev Fue Exitoso."
