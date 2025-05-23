@@ -10,51 +10,43 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: prueba Shared Data
+  m_Name: Tutorial Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: prueba
-  m_TableCollectionNameGuidString: 8d025f901611a0f4db8d139e9d5ecab6
+  m_TableCollectionName: Tutorial
+  m_TableCollectionNameGuidString: 53386030a0b66284d895bd9e2eda40c3
   m_Entries:
-  - m_Id: 41916592128
-    m_Key: TextoOpciones
+  - m_Id: 2487804940288
+    m_Key: Tutorial1
     m_Metadata:
       m_Items: []
-  - m_Id: 537259700224
-    m_Key: TextoVolumen
+  - m_Id: 2525578842112
+    m_Key: Tutorial2
     m_Metadata:
       m_Items: []
-  - m_Id: 1064886366208
-    m_Key: TextoPantallaCompleta
+  - m_Id: 2574635421696
+    m_Key: Tutorial3
     m_Metadata:
       m_Items: []
-  - m_Id: 2894383050752
-    m_Key: TextoCalidadAlta
+  - m_Id: 7323728400384
+    m_Key: Tutorial4
     m_Metadata:
       m_Items: []
-  - m_Id: 3197987745792
-    m_Key: TextoCalidadMedia
+  - m_Id: 7549583282176
+    m_Key: Tutorial5
     m_Metadata:
       m_Items: []
-  - m_Id: 4149545299968
-    m_Key: TextoCalidadBaja
-    m_Metadata:
-      m_Items: []
-  - m_Id: 120330109349888
-    m_Key: TextoIdioma
-    m_Metadata:
-      m_Items: []
-  - m_Id: 181174723540365312
-    m_Key: TextoFiltro
+  - m_Id: 7716013264896
+    m_Key: Tutorial6
     m_Metadata:
       m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 1457052547586719744
+    rid: 4997431482127745026
   references:
     version: 2
     RefIds:
-    - rid: 1457052547586719744
+    - rid: 4997431482127745026
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1701110527765
+        m_CustomEpoch: 1747881927607

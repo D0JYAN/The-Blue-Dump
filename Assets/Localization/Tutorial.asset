@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: prueba
+  m_Name: Tutorial
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: 8d025f901611a0f4db8d139e9d5ecab6, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: 53386030a0b66284d895bd9e2eda40c3, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 37c4c32972906d54ab3c884a1dcc617e, type: 2}
-  - {fileID: 11400000, guid: b3fdba6cff0670847aa66d46c5bab7af, type: 2}
-  - {fileID: 11400000, guid: 3fa1364a74df7c64cbb2c98720632e0b, type: 2}
-  - {fileID: 11400000, guid: ab8883803a847d94888d202184507e4a, type: 2}
+  - {fileID: 11400000, guid: f1a8e1009889c6249a0193390623b2fd, type: 2}
+  - {fileID: 11400000, guid: 09422d67148481749ba9012243157d9e, type: 2}
+  - {fileID: 11400000, guid: cfc9037b26020614d800429b392794f8, type: 2}
+  - {fileID: 11400000, guid: 6b84aa30d65fe544aa47cceb6f322aa4, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

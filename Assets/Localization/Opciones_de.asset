@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: prueba_es
+  m_Name: Opciones_de
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: es
+    m_Code: de
   m_SharedData: {fileID: 11400000, guid: 8d025f901611a0f4db8d139e9d5ecab6, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
   - m_Id: 41916592128
-    m_Localized: Opciones
+    m_Localized: Optionen
     m_Metadata:
       m_Items: []
   - m_Id: 537259700224
@@ -27,27 +27,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1064886366208
-    m_Localized: Pantalla completa
+    m_Localized: Vollbild
     m_Metadata:
       m_Items: []
   - m_Id: 2894383050752
-    m_Localized: Alta
+    m_Localized: Hoch
     m_Metadata:
       m_Items: []
   - m_Id: 3197987745792
-    m_Localized: Media
+    m_Localized: Halfte
     m_Metadata:
       m_Items: []
   - m_Id: 4149545299968
-    m_Localized: Baja
+    m_Localized: Niedrig
     m_Metadata:
       m_Items: []
   - m_Id: 120330109349888
-    m_Localized: Idioma
+    m_Localized: Sprache
     m_Metadata:
       m_Items: []
   - m_Id: 181174723540365312
-    m_Localized: Filtro de Color
+    m_Localized: Farbfilter
     m_Metadata:
       m_Items: []
   references:
