@@ -10,44 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: prueba_en
+  m_Name: Tutorial_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 8d025f901611a0f4db8d139e9d5ecab6, type: 2}
+  m_SharedData: {fileID: 11400000, guid: 53386030a0b66284d895bd9e2eda40c3, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 41916592128
-    m_Localized: Options
+  - m_Id: 2487804940288
+    m_Localized: You can move around the map using the joystick in the bottom right
+      corner.
     m_Metadata:
       m_Items: []
-  - m_Id: 537259700224
-    m_Localized: Volume
+  - m_Id: 2525578842112
+    m_Localized: Some bubbles will help you fill your oxygen tank.
     m_Metadata:
       m_Items: []
-  - m_Id: 1064886366208
-    m_Localized: Full screen
+  - m_Id: 2574635421696
+    m_Localized: But be careful, others may have the opposite effect.
     m_Metadata:
       m_Items: []
-  - m_Id: 2894383050752
-    m_Localized: High
+  - m_Id: 7323728400384
+    m_Localized: Pick up trash to earn points during the game
     m_Metadata:
       m_Items: []
-  - m_Id: 3197987745792
-    m_Localized: Half
+  - m_Id: 7549583282176
+    m_Localized: Help the marine animals you encounter throughout the game.
     m_Metadata:
       m_Items: []
-  - m_Id: 4149545299968
-    m_Localized: Low
-    m_Metadata:
-      m_Items: []
-  - m_Id: 120330109349888
-    m_Localized: Language
-    m_Metadata:
-      m_Items: []
-  - m_Id: 181174723540365312
-    m_Localized: Color Filter
+  - m_Id: 7716013264896
+    m_Localized: Congratulations! You can now start your adventure.
     m_Metadata:
       m_Items: []
   references:

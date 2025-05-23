@@ -18,7 +18,13 @@ MonoBehaviour:
   m_GUID: 8d8d4dd188c3c7841a2d1759f42bfeb0
   m_SerializeEntries:
   - m_GUID: 3fa1364a74df7c64cbb2c98720632e0b
-    m_Address: prueba_it
+    m_Address: Opciones_it
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-it
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfc9037b26020614d800429b392794f8
+    m_Address: Tutorial_it
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-it

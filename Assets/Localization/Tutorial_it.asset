@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 53386030a0b66284d895bd9e2eda40c3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2487804940288
+    m_Localized: Puoi muoverti sulla mappa utilizzando il joystick nell'angolo in
+      basso a destra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2525578842112
+    m_Localized: Alcune bolle ti serviranno per riempire il tuo serbatoio di ossigeno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2574635421696
+    m_Localized: Ma fai attenzione, altri possono avere l'effetto contrario
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7323728400384
+    m_Localized: Raccogli la spazzatura per guadagnare punti durante il gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7549583282176
+    m_Localized: Aiuta gli animali marini che incontrerai durante il gioco
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7716013264896
+    m_Localized: Congratulazioni! Ora puoi iniziare la tua avventura
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1120,8 +1120,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'puedes moverte por el mapa haciendo uso del joystick en la esquina inferior
-    derecha. '
+  m_text: Puedes moverte por el mapa haciendo uso del joystick en la esquina inferior
+    derecha
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07bff514bf172fa4ba5714e89959ab0c, type: 2}
   m_sharedMaterial: {fileID: 8125591455031716797, guid: 07bff514bf172fa4ba5714e89959ab0c, type: 2}
@@ -1155,8 +1155,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7960,6 +7960,7 @@ MonoBehaviour:
   Empuje: 0
   Ani_Buzo: {fileID: 0}
   joystick: {fileID: 1390542054}
+  intervalo: 1
 --- !u!1 &821583196
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,7 +9199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -768.2, y: -527.4}
+  m_AnchoredPosition: {x: -768.2001, y: -527.4}
   m_SizeDelta: {x: 37.85, y: 11.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150550854
@@ -10989,7 +10990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -587.8, y: -532.7}
+  m_AnchoredPosition: {x: -587.7999, y: -532.7}
   m_SizeDelta: {x: 37.85, y: 11.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742028534
@@ -11943,7 +11944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -817.3, y: -542.8}
+  m_AnchoredPosition: {x: -817.2999, y: -542.8}
   m_SizeDelta: {x: 37.85, y: 11.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065254383
