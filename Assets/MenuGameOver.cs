@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -22,16 +22,21 @@ public class MenuGameOver : MonoBehaviour
 
     private void activarMenu(object sender, EventArgs e)
     {
-        this.ActualizarRanking();
-        this.transform.Find("MenuGameOver").transform.Find("Ranking").GetComponent<TextMeshProUGUI>().text = "";
-        for (int i = 1; i < 3; i++)
-        {
-            string textoAnterior = this.transform.Find("MenuGameOver").transform.Find("Ranking").GetComponent<TextMeshProUGUI>().text;
-            this.transform.Find("MenuGameOver").transform.Find("Ranking").GetComponent<TextMeshProUGUI>().text = textoAnterior + "\n" + i + ". " + PlayerPrefs.GetInt("top" + i, 0).ToString();
-        }
-        menuGameOver.SetActive(true);
+        menuGameOver.SetActive(true);           // Mostrar el menú Game Over
+        ActualizarRanking();                    // Asegúrate de guardar el puntaje actual en el ranking
 
+        TextMeshProUGUI textoRanking = this.transform.Find("MenuGameOver").Find("Ranking").GetComponent<TextMeshProUGUI>();
+
+        float top1 = PlayerPrefs.GetFloat("top1", 0);
+        float top2 = PlayerPrefs.GetFloat("top2", 0);
+        float top3 = PlayerPrefs.GetFloat("top3", 0);
+
+        textoRanking.text = "🏆 Mejores Puntajes:\n";
+        textoRanking.text += "1. " + top1 + "\n";
+        textoRanking.text += "2. " + top2 + "\n";
+        textoRanking.text += "3. " + top3;
     }
+
     public void reiniciar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -45,31 +50,37 @@ public class MenuGameOver : MonoBehaviour
     public void salir()
     {
         #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // Detiene la ejecuci�n en el editor de Unity
+        UnityEditor.EditorApplication.isPlaying = false; // Detiene la ejecución en el editor de Unity
         #else
-        Application.Quit(); // Sale de la aplicaci�n en el dispositivo
+        Application.Quit(); // Sale de la aplicación en el dispositivo
         #endif
     }
 
     private void ActualizarRanking()
     {
-        if (this.scriptPuntaje == null)
+        float nuevoPuntaje = PlayerPrefs.GetFloat("Puntos", 0);
+
+        float top1 = PlayerPrefs.GetFloat("top1", 0);
+        float top2 = PlayerPrefs.GetFloat("top2", 0);
+        float top3 = PlayerPrefs.GetFloat("top3", 0);
+
+        if (nuevoPuntaje > top1)
         {
-            Debug.LogError("scriptPuntaje es null");
-            return;
+            PlayerPrefs.SetFloat("top3", top2);
+            PlayerPrefs.SetFloat("top2", top1);
+            PlayerPrefs.SetFloat("top1", nuevoPuntaje);
+        }
+        else if (nuevoPuntaje > top2)
+        {
+            PlayerPrefs.SetFloat("top3", top2);
+            PlayerPrefs.SetFloat("top2", nuevoPuntaje);
+        }
+        else if (nuevoPuntaje > top3)
+        {
+            PlayerPrefs.SetFloat("top3", nuevoPuntaje);
         }
 
-        float posicionComparada = 1;
-        bool seguirBuscando = true;
-
-        while (posicionComparada <= 3 && seguirBuscando)
-        {
-            if (PlayerPrefs.GetFloat("top" + posicionComparada, -1) < this.scriptPuntaje.Puntos)
-            {
-                PlayerPrefs.SetFloat("top" + posicionComparada, this.scriptPuntaje.Puntos);
-                seguirBuscando = false;
-            }
-            posicionComparada++;
-        }
+        PlayerPrefs.Save();
     }
+
 }
