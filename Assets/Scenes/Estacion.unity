@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ef3d3a90250f940860f4733f93ce6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 0
+  mode: 7
   showDifference: 0
 --- !u!1 &120440650
 GameObject:
@@ -535,7 +535,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -121, y: -35}
-  m_SizeDelta: {x: 100, y: 50}
+  m_SizeDelta: {x: 135.644, y: 83.267}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &287535121
 MonoBehaviour:
@@ -573,8 +573,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9b6063bcfdd38604b8146197a8732f82, type: 2}
+  m_sharedMaterial: {fileID: 3620568211902979016, guid: 9b6063bcfdd38604b8146197a8732f82, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
