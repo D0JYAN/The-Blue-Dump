@@ -19,6 +19,10 @@ public class FollowIA : MonoBehaviour
 
     void Update()
     {
+        // Verificamos que Player no sea null antes de usarlo
+        if (Player == null)
+            return;
+
         float distanciaAlJugador = Vector2.Distance(transform.position, Player.position);
 
         if (distanciaAlJugador <= rangoDeteccion)
@@ -48,6 +52,7 @@ public class FollowIA : MonoBehaviour
             }
         }
     }
+
 
     private void Attack()
     {
