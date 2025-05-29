@@ -31,7 +31,7 @@ public class MenuGameOver : MonoBehaviour
         float top2 = PlayerPrefs.GetFloat("top2", 0);
         float top3 = PlayerPrefs.GetFloat("top3", 0);
 
-        textoRanking.text = "🏆 Mejores Puntajes:\n";
+        textoRanking.text = "Mejores Puntajes:\n";
         textoRanking.text += "1. " + top1 + "\n";
         textoRanking.text += "2. " + top2 + "\n";
         textoRanking.text += "3. " + top3;
