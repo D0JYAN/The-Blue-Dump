@@ -11,20 +11,29 @@ public class PatrolIA : MonoBehaviour
     private int currentWaypoint;
     private bool isWaiting;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(transform.position != waypoints[currentWaypoint].position)
+        // Verifica si ya llegó al destino
+        if (transform.position != waypoints[currentWaypoint].position)
         {
+            // Mueve al enemigo hacia el waypoint
             transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypoint].position, speed * Time.deltaTime);
+
+            // Calcular dirección para voltear el sprite
+            float direccionX = waypoints[currentWaypoint].position.x - transform.position.x;
+
+            if (direccionX != 0) // Evitar división por cero
+            {
+                // Voltear sprite según dirección en X
+                Vector3 escala = transform.localScale;
+                escala.x = direccionX > 0 ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+                transform.localScale = escala;
+            }
         }
-        else if(!isWaiting)
+        else if (!isWaiting)
         {
-            //currentWaypoint++;
             StartCoroutine(Wait());
         }
-
-        
     }
 
     IEnumerator Wait()
@@ -33,11 +42,11 @@ public class PatrolIA : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         currentWaypoint++;
 
-        if(currentWaypoint == waypoints.Length){
+        if (currentWaypoint == waypoints.Length)
+        {
             currentWaypoint = 0;
         }
+
         isWaiting = false;
     }
-
-    
 }
