@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: TextoFiltro
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Key: MensajeJoystick
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

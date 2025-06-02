@@ -50,6 +50,11 @@ MonoBehaviour:
     m_Localized: Color Filter
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: You can move around the map using the joystick in the lower right
+      corner.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

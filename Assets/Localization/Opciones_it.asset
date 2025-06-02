@@ -50,6 +50,11 @@ MonoBehaviour:
     m_Localized: Filtro colore
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: "\xC8 possibile spostarsi sulla mappa utilizzando il joystick posto
+      nell'angolo in basso a destra."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

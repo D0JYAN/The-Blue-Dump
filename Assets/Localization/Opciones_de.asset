@@ -50,6 +50,11 @@ MonoBehaviour:
     m_Localized: Farbfilter
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: "Mit dem Joystick in der unteren rechten Ecke k\xF6nnen Sie sich
+      auf der Karte bewegen."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
