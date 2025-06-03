@@ -4,7 +4,7 @@ using TMPro;
 
 public class TextoTriggerSuave : MonoBehaviour
 {
-    [SerializeField] private TextMeshPro texto;
+    [SerializeField] private TextMeshProUGUI texto;
     [SerializeField] private float duracion = 1f;
 
     private Coroutine fadeActual;
