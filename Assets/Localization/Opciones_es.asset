@@ -55,6 +55,27 @@ MonoBehaviour:
       inferior derecha.
     m_Metadata:
       m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: "algunas burbujas te servir\xE1n para poder rellenar tu tanque de
+      ox\xEDgeno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: pero ten cuidado, otras pueden tener el efecto contrario.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: recoge basura para ganar puntos durante el juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: ayuda a los animales marinos que te encuentres a lo largo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: una vez aprendido todo esto ya puedes comenzar con tu aventura.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

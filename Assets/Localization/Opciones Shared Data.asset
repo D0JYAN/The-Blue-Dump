@@ -51,6 +51,26 @@ MonoBehaviour:
     m_Key: MensajeJoystick
     m_Metadata:
       m_Items: []
+  - m_Id: 200768565196402688
+    m_Key: MensajeBurbujas1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Key: MensajesBurbujas2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Key: MensajeBasura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Key: MensajeJaiba
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Key: MensajeFinal
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

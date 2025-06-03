@@ -55,6 +55,27 @@ MonoBehaviour:
       auf der Karte bewegen."
     m_Metadata:
       m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: "Ein paar Blasen helfen Ihnen beim Auff\xFCllen Ihrer Sauerstoffflasche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: "Aber Vorsicht, andere k\xF6nnen den gegenteiligen Effekt haben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: "Sammle M\xFCll, um w\xE4hrend des Spiels Punkte zu sammeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Helfen Sie den Meerestieren, denen Sie im Laufe des Spiels begegnen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: "Sobald Sie all dies gelernt haben, k\xF6nnen Sie Ihr Abenteuer
+      beginnen."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

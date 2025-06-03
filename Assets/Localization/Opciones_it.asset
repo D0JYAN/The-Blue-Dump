@@ -55,6 +55,26 @@ MonoBehaviour:
       nell'angolo in basso a destra."
     m_Metadata:
       m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: Alcune bollicine ti aiuteranno a riempire la bombola di ossigeno.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: Ma attenzione, altri potrebbero avere l'effetto opposto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: Raccogli i rifiuti per guadagnare punti durante il gioco.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Aiuta gli animali marini che incontri durante il gioco.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: Una volta appreso tutto questo, potrai iniziare la tua avventura.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -55,6 +55,26 @@ MonoBehaviour:
       corner.
     m_Metadata:
       m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: Some bubbles will help you refill your oxygen tank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: But be careful, others can have the opposite effect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: collect trash to earn points during the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Help the marine animals you encounter throughout the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: Once you have learned all this, you can begin your adventure.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
