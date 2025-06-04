@@ -71,6 +71,18 @@ MonoBehaviour:
     m_Key: MensajeFinal
     m_Metadata:
       m_Items: []
+  - m_Id: 201131591074361344
+    m_Key: consejo2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Key: cargando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Key: presione
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

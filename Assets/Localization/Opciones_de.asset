@@ -76,6 +76,20 @@ MonoBehaviour:
       beginnen."
     m_Metadata:
       m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "Die Verschmutzung der Meere ist jedes Jahr f\xFCr den Tod von mehr
+      als einer Million Seev\xF6geln und 100.000 Meeress\xE4ugern verantwortlich.\r\n\u2013
+      Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: Wird geladen. . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: "Dr\xFCcken Sie auf den Bildschirm, um fortzufahren."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

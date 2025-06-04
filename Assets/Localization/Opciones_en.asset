@@ -75,6 +75,23 @@ MonoBehaviour:
     m_Localized: Once you have learned all this, you can begin your adventure.
     m_Metadata:
       m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: 'Ocean pollution is responsible for the deaths of more than one
+      million seabirds and 100,000 marine mammals each year.
+
+      - Greenpeace
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: "Loading\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Press the screen to continue.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -76,6 +76,20 @@ MonoBehaviour:
     m_Localized: una vez aprendido todo esto ya puedes comenzar con tu aventura.
     m_Metadata:
       m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "La contaminaci\xF3n del agua del oc\xE9ano es responsable de la
+      muerte de m\xE1s de un mill\xF3n de aves marinas y 100,000 mam\xEDferos marinos
+      cada a\xF1o. \r\n- Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: Cargando . . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Presiona la pantalla para continuar.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

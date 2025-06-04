@@ -75,6 +75,20 @@ MonoBehaviour:
     m_Localized: Una volta appreso tutto questo, potrai iniziare la tua avventura.
     m_Metadata:
       m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "L'inquinamento degli oceani \xE8 responsabile della morte di oltre
+      un milione di uccelli marini e di 100.000 mammiferi marini ogni anno.\r\n-
+      Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: In carica . . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Premere sullo schermo per continuare.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
