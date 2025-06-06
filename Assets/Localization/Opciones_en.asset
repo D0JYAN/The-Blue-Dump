@@ -92,6 +92,15 @@ MonoBehaviour:
     m_Localized: Press the screen to continue.
     m_Metadata:
       m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: 'Every year, around 8 million tons of plastic are dumped into the
+      world''s oceans.
+
+      - United Nations (UN)
+
+'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

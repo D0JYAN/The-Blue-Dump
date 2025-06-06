@@ -90,6 +90,12 @@ MonoBehaviour:
     m_Localized: Presiona la pantalla para continuar.
     m_Metadata:
       m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: "Cada a\xF1o, se vierten alrededor de 8 millones de toneladas de
+      pl\xE1stico en los oc\xE9anos del mundo. \r\n- Organizaci\xF3n de las Naciones
+      Unidas (ONU)\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -89,6 +89,15 @@ MonoBehaviour:
     m_Localized: Premere sullo schermo per continuare.
     m_Metadata:
       m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: 'Ogni anno, circa 8 milioni di tonnellate di plastica vengono scaricate
+      negli oceani di tutto il mondo.
+
+      - Nazioni Unite (ONU)
+
+'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

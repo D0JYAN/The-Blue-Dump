@@ -90,6 +90,11 @@ MonoBehaviour:
     m_Localized: "Dr\xFCcken Sie auf den Bildschirm, um fortzufahren."
     m_Metadata:
       m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: "Jedes Jahr landen rund 8 Millionen Tonnen Plastik in den Weltmeeren.\r\n\u2013
+      Vereinte Nationen (UN)\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
