@@ -95,6 +95,10 @@ MonoBehaviour:
       Vereinte Nationen (UN)\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Spiel vorbei
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

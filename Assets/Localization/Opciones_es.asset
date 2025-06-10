@@ -96,6 +96,10 @@ MonoBehaviour:
       Unidas (ONU)\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Juego terminado
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

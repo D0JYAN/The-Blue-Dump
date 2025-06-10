@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: consejo
     m_Metadata:
       m_Items: []
+  - m_Id: 203315592207839232
+    m_Key: juego terminado
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
