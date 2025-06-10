@@ -100,6 +100,10 @@ MonoBehaviour:
     m_Localized: Juego terminado
     m_Metadata:
       m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Mejores puntajes
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -99,6 +99,10 @@ MonoBehaviour:
     m_Localized: Spiel vorbei
     m_Metadata:
       m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Beste Noten
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
