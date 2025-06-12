@@ -4,22 +4,22 @@ using TMPro;
 
 public class DialogueStart : MonoBehaviour
 {
-
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField, TextArea(4,6)] private string[] dialogueLines;
+    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
 
     private float typingTime = 0.05f;
+    private float cooldownTime = 1.5f; // Tiempo para evitar reactivar el diálogo
+    private float lastDialogueEndTime;
 
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
 
-    // Update is called once per frame
     void Update()
     {
-        if (isPlayerInRange && TouchDetected())
+        if (isPlayerInRange && TouchDetected() && Time.time - lastDialogueEndTime > cooldownTime)
         {
             if (!didDialogueStart)
             {
@@ -34,11 +34,9 @@ public class DialogueStart : MonoBehaviour
 
     private bool TouchDetected()
     {
-        // Para pruebas en PC (click izquierdo) o para toques en móvil
         return Input.GetMouseButtonDown(0) ||
                (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
     }
-
 
     private void StartDialogue()
     {
@@ -52,15 +50,13 @@ public class DialogueStart : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if(lineIndex < dialogueLines.Length)
+        if (lineIndex < dialogueLines.Length)
         {
             StartCoroutine(ShowLine());
         }
         else
         {
-            didDialogueStart = false;
-            dialoguePanel.SetActive(false);
-            dialogueMark.SetActive(true);
+            EndDialogue();
         }
     }
 
@@ -68,31 +64,41 @@ public class DialogueStart : MonoBehaviour
     {
         dialogueText.text = string.Empty;
 
-        foreach(char ch in dialogueLines[lineIndex])
+        foreach (char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
     }
 
+    private void EndDialogue()
+    {
+        didDialogueStart = false;
+        dialoguePanel.SetActive(false);
+        dialogueMark.SetActive(true);
+        lastDialogueEndTime = Time.time; // Marca el tiempo en que terminó el diálogo
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            isPlayerInRange =true;
+            isPlayerInRange = true;
             dialogueMark.SetActive(true);
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             isPlayerInRange = false;
             dialogueMark.SetActive(false);
-        }
-            
-    }
 
+            if (didDialogueStart)
+            {
+                EndDialogue(); // Cierra el diálogo si el jugador se va
+            }
+        }
+    }
 }
