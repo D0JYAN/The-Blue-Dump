@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48948617}
   - component: {fileID: 48948616}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: DialogueMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,7 +1246,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 1783
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 325543494}
   - component: {fileID: 325543497}
   - component: {fileID: 325543498}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: pez globo_0
   m_TagString: "se\xF1orapoff"
   m_Icon: {fileID: 0}
@@ -2441,7 +2441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514934008}
   - component: {fileID: 514934009}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fondo_nivel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2503,7 +2503,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -50
   m_Sprite: {fileID: 21300000, guid: df0392ee3b8cd0d45bc47eef26615dc1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3383,7 +3383,7 @@ GameObject:
   - component: {fileID: 756873284}
   - component: {fileID: 756873288}
   - component: {fileID: 756873287}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: cangrejo_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3470,7 +3470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756873283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: -9, z: 0}
+  m_LocalPosition: {x: 478.06, y: 283.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4583,7 +4583,7 @@ GameObject:
   - component: {fileID: 1163716292}
   - component: {fileID: 1163716296}
   - component: {fileID: 1163716295}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Tiburon
   m_TagString: Tiburon
   m_Icon: {fileID: 0}
@@ -4887,7 +4887,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2147483703
+    m_Bits: 2147483767
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 112a07af676e6ae4fb80cba0bab3fca9, type: 2}
   m_TargetDisplay: 0
@@ -94739,7 +94739,7 @@ GameObject:
   - component: {fileID: 1546519230}
   - component: {fileID: 1546519234}
   - component: {fileID: 1546519233}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: medusa_
   m_TagString: Medusa
   m_Icon: {fileID: 0}
