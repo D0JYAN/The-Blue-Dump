@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 430517672}
   - component: {fileID: 430517675}
   - component: {fileID: 430517676}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: lentes_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2677,13 +2677,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430517671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.91995, y: 1.5514848, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -297.0593, y: -2.0258982, z: -111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 1718939250}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &430517675
 MonoBehaviour:
@@ -95679,6 +95679,7 @@ Transform:
   - {fileID: 472636692}
   - {fileID: 1442333722}
   - {fileID: 263387094}
+  - {fileID: 430517674}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
