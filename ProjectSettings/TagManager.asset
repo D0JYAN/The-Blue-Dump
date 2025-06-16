@@ -7,13 +7,22 @@ TagManager:
   - Burbujas_Contaminadas
   - "Da\xF1o"
   - Burbujas_Sanas
+  - Tiburon
+  - Medusa
+  - "se\xF1orapoff"
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - buzo
   - Water
   - UI
+  - suelo
+  - fondo
+  - fondoMP
+  - enemigos
+  - npc
+  - items
   - 
   - 
   - 
@@ -33,13 +42,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Minimapa
   m_SortingLayers:
   - name: Default
     uniqueID: 0

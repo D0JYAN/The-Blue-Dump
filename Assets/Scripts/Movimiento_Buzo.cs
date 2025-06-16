@@ -14,11 +14,11 @@ public class Movimiento_Buzo : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Barra De Salud")]
-    [SerializeField] private int Vida = 8;
+    [SerializeField] public int Vida = 8;
     [SerializeField] private GameObject Barra_Vida;
     [SerializeField] private Sprite vida_10, vida_9, vida_8, vida_7, vida_6, vida_5, vida_4, vida_3, vida_2, vida_1, vida_0;
 
-    public bool Da�o_Buzo;
+    public bool Daño_Buzo;
     public int Empuje;
 
     [SerializeField] public Animator Ani_Buzo;
@@ -26,6 +26,12 @@ public class Movimiento_Buzo : MonoBehaviour
     //Movil
     public Joystick joystick;
     private Vector2 move_joystick;
+
+    private bool dentroBurbujaContaminada = false;
+    private bool dentroBurbujaSana = false;
+
+    [SerializeField] private float intervalo = 1f; // Tiempo entre daño/curación en segundos
+
 
     // Start is called before the first frame update
     void Start()
@@ -66,21 +72,87 @@ public class Movimiento_Buzo : MonoBehaviour
         Rigidbody2D.MovePosition(Rigidbody2D.position + move_joystick * Speed * Time.fixedDeltaTime);
     }
 
-    //Vida del personaje
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Burbujas_Contaminadas")
+        if (collision.CompareTag("Burbujas_Contaminadas"))
         {
-            Debug.Log("Quita salud");
-            PierdeVida();
+            dentroBurbujaContaminada = true;
+            StartCoroutine(DañoContinuo());
         }
 
-        if (collision.gameObject.tag == "Burbujas_Sanas")
+        if (collision.CompareTag("Burbujas_Sanas"))
         {
-            Debug.Log("Ganar Vida");
-            GanaVida();
+            dentroBurbujaSana = true;
+            StartCoroutine(CuraciónContinua());
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Burbujas_Contaminadas"))
+        {
+            dentroBurbujaContaminada = false;
+        }
+
+        if (collision.CompareTag("Burbujas_Sanas"))
+        {
+            dentroBurbujaSana = false;
+        }
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Medusa"))
+        {
+            Debug.Log("Perder vida por colisión con medusa");
+            PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
+        }
+
+        if (collision.gameObject.CompareTag("Tiburon"))
+        {
+            Debug.Log("Perder vida por colisión con medusa");
+            PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
+        }
+
+        if (collision.gameObject.CompareTag("señorapoff"))
+        {
+            Debug.Log("Perder vida por colisión con medusa");
+            PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
+        }
+    }
+
+    private IEnumerator DañoContinuo()
+    {
+        while (dentroBurbujaContaminada)
+        {
+            PierdeVida();
+            yield return new WaitForSeconds(intervalo);
+        }
+    }
+
+    private IEnumerator CuraciónContinua()
+    {
+        while (dentroBurbujaSana)
+        {
+            GanaVida();
+            yield return new WaitForSeconds(intervalo);
+        }
+    }
+
 
     private void PierdeVida()
     {

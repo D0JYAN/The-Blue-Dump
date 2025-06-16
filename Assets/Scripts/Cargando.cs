@@ -1,16 +1,29 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Tables;
+
 
 public class Cargando : MonoBehaviour
 {
     public Text texto;
+    public string claveTextoContinuar = "presione"; // Debe coincidir con la clave en la tabla
+    public string nombreTabla = "Opciones"; // Nombre de tu tabla
 
     private void Start()
     {
         string nivel_A_Cargar = Carga_Nivel.siguiente_Nivel;
+
+        if (string.IsNullOrEmpty(nivel_A_Cargar))
+        {
+            texto.text = "Error: Escena inválida.";
+            return;
+        }
+
         StartCoroutine(Iniciar_Carga(nivel_A_Cargar));
     }
 
@@ -20,12 +33,22 @@ public class Cargando : MonoBehaviour
         AsyncOperation Operacion = SceneManager.LoadSceneAsync(nivel);
         Operacion.allowSceneActivation = false;
 
-        while(!Operacion.isDone)
+        while (!Operacion.isDone)
         {
-            if(Operacion.progress >= 0.9f)
+            if (Operacion.progress >= 0.9f)
             {
-                texto.text = "Presiona la pantalla para continuar.";
-                if(Input.anyKey)
+                // 🔽 Aquí cargamos el texto traducido
+                LocalizedString textoContinuar = new LocalizedString(nombreTabla, claveTextoContinuar);
+                textoContinuar.StringChanged += (valorTraducido) =>
+                {
+                    if (texto != null)
+                    {
+                        texto.text = valorTraducido;
+                    }
+                };
+
+
+                if (Input.anyKey)
                 {
                     Operacion.allowSceneActivation = true;
                 }
@@ -34,3 +57,4 @@ public class Cargando : MonoBehaviour
         }
     }
 }
+

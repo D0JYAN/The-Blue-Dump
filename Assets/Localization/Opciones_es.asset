@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Opciones_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 8d025f901611a0f4db8d139e9d5ecab6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 41916592128
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 537259700224
+    m_Localized: Volumen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1064886366208
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2894383050752
+    m_Localized: Alta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3197987745792
+    m_Localized: Media
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4149545299968
+    m_Localized: Baja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 120330109349888
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181174723540365312
+    m_Localized: Filtro de Color
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: Puedes moverte por el mapa haciendo uso del joystick en la esquina
+      inferior derecha.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: "algunas burbujas te servir\xE1n para poder rellenar tu tanque de
+      ox\xEDgeno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: pero ten cuidado, otras pueden tener el efecto contrario.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: recoge basura para ganar puntos durante el juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: ayuda a los animales marinos que te encuentres a lo largo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: una vez aprendido todo esto ya puedes comenzar con tu aventura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "La contaminaci\xF3n del agua del oc\xE9ano es responsable de la
+      muerte de m\xE1s de un mill\xF3n de aves marinas y 100,000 mam\xEDferos marinos
+      cada a\xF1o. \r\n- Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: Cargando . . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Presiona la pantalla para continuar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: "Cada a\xF1o, se vierten alrededor de 8 millones de toneladas de
+      pl\xE1stico en los oc\xE9anos del mundo. \r\n- Organizaci\xF3n de las Naciones
+      Unidas (ONU)\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Juego terminado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Mejores puntajes
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
