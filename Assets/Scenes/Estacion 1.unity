@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ef3d3a90250f940860f4733f93ce6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 0
+  mode: 7
   showDifference: 0
 --- !u!81 &1203946746
 AudioListener:
@@ -2186,7 +2186,7 @@ Animator:
   m_GameObject: {fileID: 1540336639}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ecf5cfc65cce324695ad8d6f4f7aa89, type: 2}
+  m_Controller: {fileID: 9100000, guid: a7261323c6c624f40902eb5e2aa583a9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2274,7 +2274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -597225280, guid: f456473ef7a292244a005d0ffcf2c98b, type: 3}
+  m_Sprite: {fileID: 997411071, guid: 191e7161a178b2c419851a7f3609cb0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
