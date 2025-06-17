@@ -13,7 +13,7 @@ public class Nivel1_Start : MonoBehaviour
             if (controlador != null)
             {
                 controlador.GuardarDatos();
-                Carga_Nivel.nivel_Carga("Estacion");
+                Carga_Nivel.nivel_Carga("Estacion_1");
                 Debug.Log("Punto de partida guardado");
             }
             else
