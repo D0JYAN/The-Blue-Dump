@@ -109,6 +109,18 @@ MonoBehaviour:
     m_Localized: Best scores
     m_Metadata:
       m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: The princess is in another castle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Sorry, I meant\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: If you want to pass you must collect 300 points, foolish.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

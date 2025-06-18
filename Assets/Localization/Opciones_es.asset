@@ -104,6 +104,18 @@ MonoBehaviour:
     m_Localized: Mejores puntajes
     m_Metadata:
       m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: La princesa se encuentra en otro castillo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Perd\xF3n, quise decir\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: "Si quieres pasar deber\xE1s de juntar 300 puntos insensato."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

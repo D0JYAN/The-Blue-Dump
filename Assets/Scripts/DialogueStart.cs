@@ -1,13 +1,16 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization.Settings;
 
 public class DialogueStart : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueMark;
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField, TextArea(4, 6)] private string[] dialogueLines;
+    [SerializeField] private LocalizedString[] dialogueLines;
 
     private float typingTime = 0.05f;
     private float cooldownTime = 1.5f; // Tiempo para evitar reactivar el diálogo
@@ -16,6 +19,8 @@ public class DialogueStart : MonoBehaviour
     private bool isPlayerInRange;
     private bool didDialogueStart;
     private int lineIndex;
+    private bool lineaTerminada;
+
 
     void Update()
     {
@@ -25,7 +30,7 @@ public class DialogueStart : MonoBehaviour
             {
                 StartDialogue();
             }
-            else if (dialogueText.text == dialogueLines[lineIndex])
+            else if (lineaTerminada)
             {
                 NextDialogueLine();
             }
@@ -62,13 +67,23 @@ public class DialogueStart : MonoBehaviour
 
     private IEnumerator ShowLine()
     {
+        lineaTerminada = false;
         dialogueText.text = string.Empty;
 
-        foreach (char ch in dialogueLines[lineIndex])
+        var localizedLine = dialogueLines[lineIndex];
+        var loadingOperation = localizedLine.GetLocalizedStringAsync();
+
+        yield return loadingOperation;
+
+        string line = loadingOperation.Result;
+
+        foreach (char ch in line)
         {
             dialogueText.text += ch;
             yield return new WaitForSeconds(typingTime);
         }
+
+        lineaTerminada = true;
     }
 
     private void EndDialogue()

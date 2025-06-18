@@ -1303,6 +1303,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &223428309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 223428311}
+  - component: {fileID: 223428310}
+  m_Layer: 0
+  m_Name: idiomas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &223428310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223428309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00f7ada06f838d41916cbd8e0f82045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &223428311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223428309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 205.20001, y: 15.400024, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &248232011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ef3d3a90250f940860f4733f93ce6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 0
+  mode: 5
   showDifference: 0
 --- !u!1 &315882997
 GameObject:
@@ -3911,7 +3955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756873283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 478.06, y: 283.02, z: 0}
+  m_LocalPosition: {x: -5.7, y: -9.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3935,9 +3979,33 @@ MonoBehaviour:
   dialoguePanel: {fileID: 808204557}
   dialogueText: {fileID: 1631576073}
   dialogueLines:
-  - la princesa se encuentra en otro castillo!!
-  - Perdon quise decir...
-  - si quieres pasar deberas reunir 120 puntos incensato
+  - m_TableReference:
+      m_TableCollectionName: GUID:8d025f901611a0f4db8d139e9d5ecab6
+    m_TableEntryReference:
+      m_KeyId: 206213644694368256
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8d025f901611a0f4db8d139e9d5ecab6
+    m_TableEntryReference:
+      m_KeyId: 206213689917353984
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8d025f901611a0f4db8d139e9d5ecab6
+    m_TableEntryReference:
+      m_KeyId: 206214185650532352
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!61 &756873288
 BoxCollider2D:
   m_ObjectHideFlags: 0
