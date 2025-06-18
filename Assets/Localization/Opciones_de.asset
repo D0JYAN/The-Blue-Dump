@@ -115,6 +115,18 @@ MonoBehaviour:
     m_Localized: Wenn du bestehen willst, musst du 300 Punkte sammeln, dummer Kerl.
     m_Metadata:
       m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: "Es ist gef\xE4hrlich, alleine zu gehen, nimm das."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: SIE HABEN EINE KARTE ERHALTEN!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: Was? Du hast ein Schwert erwartet?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -107,6 +107,18 @@ MonoBehaviour:
     m_Key: dialogo cangrejo 3
     m_Metadata:
       m_Items: []
+  - m_Id: 206217770257920000
+    m_Key: dialogo pulpo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Key: dialogo pulpo 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Key: dialogo pulpo 3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

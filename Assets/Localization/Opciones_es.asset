@@ -116,6 +116,18 @@ MonoBehaviour:
     m_Localized: "Si quieres pasar deber\xE1s de juntar 300 puntos insensato."
     m_Metadata:
       m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: 'Es peligroso ir solo, toma esto. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: "\xA1HAS RECIBIDO UN MAPA!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: "\xBFQue? \xBFEsperabas una espada?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

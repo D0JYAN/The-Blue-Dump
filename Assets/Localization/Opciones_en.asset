@@ -121,6 +121,18 @@ MonoBehaviour:
     m_Localized: If you want to pass you must collect 300 points, foolish.
     m_Metadata:
       m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: It's dangerous to go alone, take this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: YOU HAVE RECEIVED A MAP!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: What? You were expecting a sword?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
