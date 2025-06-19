@@ -13,7 +13,7 @@ public class Salto_Demo : MonoBehaviour
             if (controlador != null)
             {
                 controlador.GuardarDatos();
-                Cargar_Demo.nivel_Carga_demo("MainMenu");
+                Cargar_Demo.nivel_Carga_demo("NuevoMenu");
                 Debug.Log("Punto de partida guardado");
             }
             else
