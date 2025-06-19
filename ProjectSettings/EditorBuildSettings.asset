@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Estacion.unity
     guid: 95037450c86848842a1564d4454f03aa
   - enabled: 1
-    path: Assets/Scenes/Pantalla_Carga_2.unity
+    path: Assets/Scenes/Pantalla_Carga_demo.unity
     guid: 6e2b228a3b059e64690ae3d5fdd7446e
   - enabled: 1
     path: Assets/Scenes/Nivel_1.unity
@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Estacion_1.unity
     guid: 881f5a65a5c123e469125eca348ecda4
+  - enabled: 1
+    path: Assets/Scenes/Pantalla_Carga_2.unity
+    guid: a01c1982d50e1e64f81fa5b10b22683a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 576eb14ea2b11a446be9bbf8e62f4ec2, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: b1dc841ba56815f4996d92e386b07a05, type: 2}

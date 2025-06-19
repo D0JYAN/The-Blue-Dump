@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ef3d3a90250f940860f4733f93ce6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 7
+  mode: 5
   showDifference: 0
 --- !u!1 &656464607
 GameObject:
@@ -383,7 +383,7 @@ RectTransform:
   m_Children:
   - {fileID: 950128780}
   - {fileID: 1645092025}
-  - {fileID: 1208279796}
+  - {fileID: 1631613649}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -512,7 +512,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950128779}
   m_CullTransparentMesh: 1
---- !u!1 &1208279795
+--- !u!1 &1631613648
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -520,10 +520,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1208279796}
-  - component: {fileID: 1208279798}
-  - component: {fileID: 1208279797}
-  - component: {fileID: 1208279799}
+  - component: {fileID: 1631613649}
+  - component: {fileID: 1631613651}
+  - component: {fileID: 1631613650}
   m_Layer: 5
   m_Name: Consejo
   m_TagString: Untagged
@@ -531,13 +530,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1208279796
+--- !u!224 &1631613649
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208279795}
+  m_GameObject: {fileID: 1631613648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -551,13 +550,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1800, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1208279797
+--- !u!114 &1631613650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208279795}
+  m_GameObject: {fileID: 1631613648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -576,65 +575,23 @@ MonoBehaviour:
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 90
+    m_MinSize: 0
+    m_MaxSize: 70
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "La contaminaci\xF3n del agua del oc\xE9ano es responsable de la muerte
-    de m\xE1s de un mill\xF3n de aves marinas y 100,000 mam\xEDferos marinos cada
-    a\xF1o. \n- Greenpeace"
---- !u!222 &1208279798
+  m_Text: MUCHAS GRACIAS POR JUGAR A NUESTRA DEMO.
+--- !u!222 &1631613651
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208279795}
+  m_GameObject: {fileID: 1631613648}
   m_CullTransparentMesh: 1
---- !u!114 &1208279799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208279795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:8d025f901611a0f4db8d139e9d5ecab6
-    m_TableEntryReference:
-      m_KeyId: 201131591074361344
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1208279797}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &1645092024
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,3 +799,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   texto: {fileID: 1645092026}
+  claveTextoContinuar: presione
+  nombreTabla: Opciones
