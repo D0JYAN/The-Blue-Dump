@@ -130,6 +130,10 @@ MonoBehaviour:
     m_Localized: Cosa? Ti aspettavi una spada?
     m_Metadata:
       m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: GRAZIE MILLE PER AVER GIOCATO ALLA NOSTRA DEMO.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

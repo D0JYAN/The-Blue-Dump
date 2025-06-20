@@ -127,6 +127,10 @@ MonoBehaviour:
     m_Localized: Was? Du hast ein Schwert erwartet?
     m_Metadata:
       m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: VIELEN DANK, DASS SIE UNSERE DEMO SPIELEN.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -133,6 +133,10 @@ MonoBehaviour:
     m_Localized: What? You were expecting a sword?
     m_Metadata:
       m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: THANK YOU VERY MUCH FOR PLAYING OUR DEMO.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
