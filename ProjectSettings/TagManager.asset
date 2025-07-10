@@ -7,21 +7,22 @@ TagManager:
   - Burbujas_Contaminadas
   - "Da\xF1o"
   - Burbujas_Sanas
-  - Medusa
   - Tiburon
+  - Medusa
+  - "se\xF1orapoff"
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - buzo
   - Water
   - UI
-  - Enemigos
-  - 
-  - 
-  - 
-  - 
-  - 
+  - suelo
+  - fondo
+  - fondoMP
+  - enemigos
+  - npc
+  - items
   - 
   - 
   - 

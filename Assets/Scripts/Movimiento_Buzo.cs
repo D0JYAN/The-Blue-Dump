@@ -123,6 +123,16 @@ public class Movimiento_Buzo : MonoBehaviour
             Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
             GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
         }
+
+        if (collision.gameObject.CompareTag("señorapoff"))
+        {
+            Debug.Log("Perder vida por colisión con medusa");
+            PierdeVida();
+
+            // Opción opcional: empujar al jugador un poco hacia atrás
+            Vector2 direccionRebote = (transform.position - collision.transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(direccionRebote * 10000f); // Ajusta la fuerza
+        }
     }
 
     private IEnumerator DañoContinuo()

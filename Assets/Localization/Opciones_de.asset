@@ -50,6 +50,87 @@ MonoBehaviour:
     m_Localized: Farbfilter
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: "Mit dem Joystick in der unteren rechten Ecke k\xF6nnen Sie sich
+      auf der Karte bewegen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: "Ein paar Blasen helfen Ihnen beim Auff\xFCllen Ihrer Sauerstoffflasche."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: "Aber Vorsicht, andere k\xF6nnen den gegenteiligen Effekt haben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: "Sammle M\xFCll, um w\xE4hrend des Spiels Punkte zu sammeln."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Helfen Sie den Meerestieren, denen Sie im Laufe des Spiels begegnen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: "Sobald Sie all dies gelernt haben, k\xF6nnen Sie Ihr Abenteuer
+      beginnen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "Die Verschmutzung der Meere ist jedes Jahr f\xFCr den Tod von mehr
+      als einer Million Seev\xF6geln und 100.000 Meeress\xE4ugern verantwortlich.\r\n\u2013
+      Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: Wird geladen. . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: "Dr\xFCcken Sie auf den Bildschirm, um fortzufahren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: "Jedes Jahr landen rund 8 Millionen Tonnen Plastik in den Weltmeeren.\r\n\u2013
+      Vereinte Nationen (UN)\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Spiel vorbei
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Beste Noten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: Die Prinzessin ist in einem anderen Schloss.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Entschuldigung, ich meinte \u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: Wenn du bestehen willst, musst du 300 Punkte sammeln, dummer Kerl.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: "Es ist gef\xE4hrlich, alleine zu gehen, nimm das."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: SIE HABEN EINE KARTE ERHALTEN!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: Was? Du hast ein Schwert erwartet?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: VIELEN DANK, DASS SIE UNSERE DEMO SPIELEN.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

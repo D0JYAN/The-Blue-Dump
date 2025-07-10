@@ -50,6 +50,90 @@ MonoBehaviour:
     m_Localized: Filtro colore
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: "\xC8 possibile spostarsi sulla mappa utilizzando il joystick posto
+      nell'angolo in basso a destra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: Alcune bollicine ti aiuteranno a riempire la bombola di ossigeno.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: Ma attenzione, altri potrebbero avere l'effetto opposto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: Raccogli i rifiuti per guadagnare punti durante il gioco.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Aiuta gli animali marini che incontri durante il gioco.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: Una volta appreso tutto questo, potrai iniziare la tua avventura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "L'inquinamento degli oceani \xE8 responsabile della morte di oltre
+      un milione di uccelli marini e di 100.000 mammiferi marini ogni anno.\r\n-
+      Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: In carica . . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Premere sullo schermo per continuare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: 'Ogni anno, circa 8 milioni di tonnellate di plastica vengono scaricate
+      negli oceani di tutto il mondo.
+
+      - Nazioni Unite (ONU)
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Game over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: I migliori punteggi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: La principessa si trova in un altro castello.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Entschuldigung, ich meinte \u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: Se vuoi passare devi accumulare 300 punti, che sciocchezza.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: "\xC8 pericoloso andare da soli, prendi questo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: HAI RICEVUTO UNA MAPPA!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: Cosa? Ti aspettavi una spada?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: GRAZIE MILLE PER AVER GIOCATO ALLA NOSTRA DEMO.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

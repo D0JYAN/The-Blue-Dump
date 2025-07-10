@@ -50,6 +50,93 @@ MonoBehaviour:
     m_Localized: Color Filter
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: You can move around the map using the joystick in the lower right
+      corner.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: Some bubbles will help you refill your oxygen tank.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: But be careful, others can have the opposite effect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: collect trash to earn points during the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: Help the marine animals you encounter throughout the game.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: Once you have learned all this, you can begin your adventure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: 'Ocean pollution is responsible for the deaths of more than one
+      million seabirds and 100,000 marine mammals each year.
+
+      - Greenpeace
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: "Loading\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Press the screen to continue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: 'Every year, around 8 million tons of plastic are dumped into the
+      world''s oceans.
+
+      - United Nations (UN)
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Game over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Best scores
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: The princess is in another castle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Sorry, I meant\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: If you want to pass you must collect 300 points, foolish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: It's dangerous to go alone, take this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: YOU HAVE RECEIVED A MAP!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: What? You were expecting a sword?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: THANK YOU VERY MUCH FOR PLAYING OUR DEMO.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

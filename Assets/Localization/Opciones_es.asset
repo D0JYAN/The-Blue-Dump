@@ -50,6 +50,88 @@ MonoBehaviour:
     m_Localized: Filtro de Color
     m_Metadata:
       m_Items: []
+  - m_Id: 200385956045959168
+    m_Localized: Puedes moverte por el mapa haciendo uso del joystick en la esquina
+      inferior derecha.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768565196402688
+    m_Localized: "algunas burbujas te servir\xE1n para poder rellenar tu tanque de
+      ox\xEDgeno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200768825117421568
+    m_Localized: pero ten cuidado, otras pueden tener el efecto contrario.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769096233037824
+    m_Localized: recoge basura para ganar puntos durante el juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769444762923008
+    m_Localized: ayuda a los animales marinos que te encuentres a lo largo del juego.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 200769853619482624
+    m_Localized: una vez aprendido todo esto ya puedes comenzar con tu aventura.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201131591074361344
+    m_Localized: "La contaminaci\xF3n del agua del oc\xE9ano es responsable de la
+      muerte de m\xE1s de un mill\xF3n de aves marinas y 100,000 mam\xEDferos marinos
+      cada a\xF1o. \r\n- Greenpeace\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136306549993472
+    m_Localized: Cargando . . .
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201136611090018304
+    m_Localized: Presiona la pantalla para continuar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 201842187910557696
+    m_Localized: "Cada a\xF1o, se vierten alrededor de 8 millones de toneladas de
+      pl\xE1stico en los oc\xE9anos del mundo. \r\n- Organizaci\xF3n de las Naciones
+      Unidas (ONU)\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203315592207839232
+    m_Localized: Juego terminado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 203334609186369536
+    m_Localized: Mejores puntajes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213644694368256
+    m_Localized: La princesa se encuentra en otro castillo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206213689917353984
+    m_Localized: "Perd\xF3n, quise decir\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206214185650532352
+    m_Localized: "Si quieres pasar deber\xE1s de juntar 300 puntos insensato."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206217770257920000
+    m_Localized: 'Es peligroso ir solo, toma esto. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218024470491136
+    m_Localized: "\xA1HAS RECIBIDO UN MAPA!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206218331757785088
+    m_Localized: "\xBFQue? \xBFEsperabas una espada?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 206909861451575296
+    m_Localized: MUCHAS GRACIAS POR JUGAR A NUESTRA DEMO.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
