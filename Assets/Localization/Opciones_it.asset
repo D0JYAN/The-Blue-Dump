@@ -134,6 +134,10 @@ MonoBehaviour:
     m_Localized: GRAZIE MILLE PER AVER GIOCATO ALLA NOSTRA DEMO.
     m_Metadata:
       m_Items: []
+  - m_Id: 216424263777439744
+    m_Localized: Sono un polpo, non un fabbro!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

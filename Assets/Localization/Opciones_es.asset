@@ -132,6 +132,10 @@ MonoBehaviour:
     m_Localized: MUCHAS GRACIAS POR JUGAR A NUESTRA DEMO.
     m_Metadata:
       m_Items: []
+  - m_Id: 216424263777439744
+    m_Localized: Soy un pulpo, no un herrero!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

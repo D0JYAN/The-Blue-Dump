@@ -137,6 +137,10 @@ MonoBehaviour:
     m_Localized: THANK YOU VERY MUCH FOR PLAYING OUR DEMO.
     m_Metadata:
       m_Items: []
+  - m_Id: 216424263777439744
+    m_Localized: I'm an octopus, not a blacksmith!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
